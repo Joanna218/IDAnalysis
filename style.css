@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("notosanstc.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;900&amp;display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700;900&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700;900&display=swap');
 
 
 html{height:100%;}

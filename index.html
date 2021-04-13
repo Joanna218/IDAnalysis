@@ -8,7 +8,7 @@
 </head>
 
 <style>
-  #index_sec_content_box {
+  #index_sec_content_intro {
     display: flex;
   }
   #index_sec_content_box_img {
@@ -49,8 +49,22 @@
   }
 
   .tooltip:hover .tooltiptext {
-  visibility: visible;
-}
+    visibility: visible;
+  }
+
+  * {
+    /* border: 1px solid; */
+  }
+
+  #idex_sec_content_item h4 {
+    margin: 0;
+    line-height: initial;
+    margin-top: 16px;
+  }
+
+  .t {
+    padding: 30px 40px 10px 40px;
+  }
 </style>
 
 <body>
@@ -72,8 +86,10 @@
     </div>
 
     <div id="index_sec">
+      <!-- 鄉民研究所 -->
       <div id="index_sec_content">
-        <div id="index_sec_content_box">
+        <!-- 上方介紹 -->
+        <div id="index_sec_content_intro">
           <div id="index_sec_content_box_img">
             <img src="images/index_01_1.png" alt=""/>
           </div>
@@ -94,8 +110,70 @@
               </p>
             </div>
           </div>
-
         </div>
+
+        <!-- 下方圖文特點 -->
+        <div id="idex_sec_content_item" style="display: flex;
+        justify-content: space-between;">
+            <div class="t">
+              <img src="images/item1.png" alt="">
+              <h4>七大特徵標籤</h4>
+              <p>
+                6000多種標籤
+                <br>
+                任您搭配運用
+              </p>
+            </div>
+
+            <div class="t">
+              <img src="images/item2.png" alt="">
+              <h4>獨家技術</h4>
+              <p>
+                辨識詞庫
+                <br>
+                領域詞權重統計
+                <br>
+                話題分類辨識模型
+              </p>
+            </div>
+
+            <div class="t">
+              <img src="images/item3.png" alt="">
+              <h4>分析應用</h4>
+              <p>
+                生活型態
+                <br>
+                市場研究
+                <br>
+                政治民意
+              </p>
+            </div>
+
+            <div class="t">
+              <img src="images/item4.png" alt="">
+              <h4>產品服務</h4>
+              <p>
+                ID標籤資料庫
+                <br>
+                ID分析系統
+                <br>
+                ID分析報告
+              </p>
+            </div>
+
+            <div class="t">
+              <img src="images/item5.png" alt="">
+              <h4>解決方案</h4>
+              <p>
+                洞悉消費者生活型態
+                <br>
+                動態式追蹤消費行為
+                <br>
+                標籤掌握社群ID政治傾向
+              </p>
+            </div>
+        </div>
+
 
         <!-- <img src="images/index_01.png" width="1080" height="376" alt=""/> -->
         <img src="images/index_02.png" width="1080" height="344" alt="" />

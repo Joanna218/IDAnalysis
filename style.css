@@ -605,15 +605,17 @@ a {
     font-weight: 700;
     color: #000;
     width: 100%;
-    clear: both;
-    line-height: 70px;
+    margin: 0;
+    /* clear: both; */
+    /* line-height: 70px; */
 }
 
 #program_content {
-    width: 1080px;
+    /* width: 1080px; */
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
+    /* background-color: #f8f8f8; */
 }
 
 #program_content h2 {
@@ -621,8 +623,9 @@ a {
     font-weight: 700;
     color: #000;
     width: 100%;
-    clear: both;
-    line-height: 70px;
+    margin: 0;
+    /* clear: both;
+    line-height: 70px; */
 }
 
 
@@ -632,7 +635,7 @@ a {
 }
 
 #program_menu img {
-    margin-right: 42px;
+    /* margin-right: 42px; */
 }
 
 #program_menu_idreport {

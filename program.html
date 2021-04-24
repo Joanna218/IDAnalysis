@@ -15,7 +15,7 @@
   }
 
   .tab1 {
-    width:274px;
+    width: 274px;
     height: 66px;
     background-image: url('images/program_btn_01.png');
   }
@@ -34,7 +34,7 @@
 
 
   .tab2 {
-    width:274px;
+    width: 274px;
     height: 66px;
     background-image: url('images/program_btn_02.png');
   }
@@ -52,7 +52,7 @@
   }
 
   .tab3 {
-    width:274px;
+    width: 274px;
     height: 66px;
     background-image: url('images/program_btn_03.png');
   }
@@ -112,6 +112,20 @@
     display: block;
   }
 
+  .collapsible {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    color: #bbbbbb;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .showContent {
+    display: none;
+  }
 </style>
 
 <body>
@@ -170,6 +184,7 @@
           width="1080" height="433" alt="" /><img src="images/program_03.png" alt="" width="1080" height="303" />
 
         <div id="program_menu_idreport">
+          <!-- 生活型態族群分析報告 -->
           <div class="box">
             <h3>生活型態族群分析報告</h3>
             <p>觀察不同生活風格的的網路使用者，在人口組成、消費行為、興趣、休閒活動與社群話題的參與情況。提供產品開發、研究單位、社群行銷策略有價值的台灣鄉民生活風格洞察。
@@ -181,12 +196,31 @@
             <h4>內容綱要</h4>
 
             <p>CH1 - 生活風格定義說明 <br />
-              <a href="program-1.html#b" class="more">(顯示更多…)</a> </p>
+              <button type="button" id="idreport1Btn" class="collapsible">(顯示更多…)</button>
+              <span id="idreport1" class="showContent">
+                CH2 - 族群社群生態<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-1 - 話題聲量趨勢<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-2 - 族群來源分佈<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3 - 話題屬性分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-4 - 熱門議題趨勢分析<br />
+                CH3 - 族群輪廓分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-1 - 性別比例<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-2 - 婚姻狀態比例<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-3 - 生育狀態比例<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-4 - 居住地比例<br />
+                CH4 - 族群消費行為<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4-1 - 偏好品牌分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4-2 - 通路選擇分析<br />
+                CH5 - 族群興趣分析<br />
+                CH6 - 族群意見參與分析<br />
+                CH7 - 族群休閒活動分析<br />
+                CH8 - 觀察總結與後續相關建議
+              </span>
+            </p>
             <img src="images/idreport_bg-2.png" width="349" height="44" alt="" />
           </div>
 
-
-
+          <!-- 消費市場需求族群分析報告 -->
           <div class="box">
             <h3>消費市場需求族群分析報告 </h3>
             <p>客群輪廓樣貌在產品開發、上市策略與行銷計畫擬定都扮演重要角色。我們透過消費需求的討論過濾目標族群，協助客戶描繪目標族群的人口組成、興趣、偏好的話題類型與休閒活動。 </p>
@@ -195,12 +229,27 @@
             <p>根據４種客群定位變數分析目標族群樣貌： 人口結構、消費水平、生活型態、行為變項 </p>
             <h4>內容綱要</h4>
 
-            <p>CH1 - 消費需求量化分析 <br />
-              <a href="program-2.html#b" class="more">(顯示更多…)</a> </p>
+            <p class="idreport2Bottom">CH1 - 消費需求量化分析 <br />
+              <button type="button" id="idreport2Btn" class="collapsible">(顯示更多…)</button>
+              <span id="idreport2" class="showContent">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-1 - 消費需求聲量趨勢<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-2 - 討論來源分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-3 - 關聯品牌分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-4 - 關鍵字分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-5 - 熱門話題分析<br />
+                CH2 - 消費需求下的族群樣貌分析<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-1 - 人口結構<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-2 - 消費水平<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3 - 生活型態<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-4 - 行為變項<br />
+                CH3 - 分析總結與建議
+              </span>
+
+            </p>
             <img src="images/idreport_bg-2.png" width="349" height="44" alt="" />
           </div>
 
-
+          <!-- 群眾意見民調分析報告 -->
           <div class="box" style="margin-right: 0;">
             <h3>群眾意見民調分析報告 </h3>
             <p>了解網路民眾對於政治、議題事件的意見和態度，洞察民眾好感度與關注重點面向，提供公部門或研究單位民眾與媒體輿情現況參考，以利後續廣宣推廣企劃。 </p>
@@ -209,8 +258,16 @@
             <p>針對政黨、政治人物與議題事件進行趨勢變化、熱門議題與好感度進行分析。 </p>
             <h4>內容綱要</h4>
 
-            <p style="margin-bottom: 34px;">CH1 - 各標的政黨/政治人物/議題事件簡介 <br />
-              <a href="program-3.html#b" class="more">(顯示更多…)</a> </p>
+            <p class="idreport3Bottom" style="margin-bottom: 34px;">CH1 - 各標的政黨/政治人物/議題事件簡介 <br />
+              <button type="button" id="idreport3Btn" class="collapsible">(顯示更多…)</button>
+              <span id="idreport3" class="showContent">
+                CH2 - 各標的政黨/政治人物/議題事件趨<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勢分析<br />
+                CH3 - 各標的政黨/政治人物/議題事件來<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;源熱門頻道分析<br />
+                CH4 – 各標的政黨/政治人物/議題事件熱<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;門議題分析<br />
+                CH5 - 各標的政黨/政治人物/議題事件好<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感度分析<br />
+                CH6 - 觀察總結與後續相關建議
+              </span>
+            </p>
             <img src="images/idreport_bg-2.png" width="349" height="44" alt="" />
           </div>
           <div class="clear"></div>
@@ -325,9 +382,9 @@
 </body>
 
 <script>
-  $(function() {
+  $(function () {
 
-    $('.program_tab').on('click', function(e) {
+    $('.program_tab').on('click', function (e) {
       $(this).toggleClass('is-active').siblings().removeClass('is-active');
 
       $('#socialMarketing').removeClass('show');
@@ -336,12 +393,29 @@
 
       if ($(this).attr('id') == 'program_btn_01') {
         $('#socialMarketing').addClass('show');
-      } else if($(this).attr('id') == 'program_btn_02') {
+      } else if ($(this).attr('id') == 'program_btn_02') {
         $('#crm').addClass('show');
       } else {
         $('#policyMk').addClass('show');
       }
     })
+
+    $('#idreport1Btn').on('click', function () {
+      $('#idreport1').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+    });
+
+    $('#idreport2Btn').on('click', function () {
+      $('#idreport2').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport2Bottom').css('margin-bottom', '153px');
+    });
+
+    $('#idreport3Btn').on('click', function () {
+      $('#idreport3').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport3Bottom').css('margin-bottom', '225px');
+    });
   })
 </script>
 

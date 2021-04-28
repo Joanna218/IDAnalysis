@@ -7,6 +7,8 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="gears.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="js/aos.js"></script>
 </head>
 
 <style>
@@ -195,6 +197,12 @@
 
   .fa-star {
     color: #f3cc30;
+    opacity: 0.3;
+  }
+
+  .fa-star.check {
+    opacity: 1;
+    margin-left: -33px;
   }
 
 
@@ -204,20 +212,20 @@
     animation-fill-mode: forwards;
   }
 
-  @keyframes fadeInAnimation {
+  /* @keyframes fadeInAnimation {
       0% {
           opacity: 0.3;
       }
       100% {
           opacity: 1;
       }
-  }
+  } */
 
-  #win {
+  /* #win {
     animation: fadeInAnimationWin ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-  }
+  } */
 
   @keyframes fadeInAnimationWin {
       0% {
@@ -440,7 +448,25 @@
           <div style="text-align: left;">
             <img src="images/traditional.png" alt="">
             <div>
-              <span id="star">
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                 class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in" data-aos-delay="200"
+                 class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span  data-aos="zoom-in" data-aos-delay="400"
+                 class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span class="fa fa-2x fa-star"></span>
+                <span class="fa fa-2x fa-star"></span>
+                <span class="fa fa-2x fa-star"></span>
+                <span class="fa fa-2x fa-star"></span>
+
+              <!-- <span id="star">
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
@@ -451,7 +477,7 @@
                 <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
                 <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
                 <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-              </span>
+              </span> -->
             </div>
 
             <img style="margin-top: 30px;" src="images/traditionalText.png" alt="">
@@ -462,7 +488,38 @@
           <div style="text-align: left;">
             <img src="images/IdSearch.png" alt="">
             <div>
-              <span id="star">
+
+              <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                data-aos-delay="200" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                data-aos-delay="400" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span  data-aos="zoom-in"
+                data-aos-delay="600" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                data-aos-delay="800" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                data-aos-delay="1000" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span  data-aos="zoom-in"
+                data-aos-delay="1200" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+                <span data-aos="zoom-in"
+                data-aos-delay="1400" class="fa fa-2x fa-star check"></span>
+
+                <span class="fa fa-2x fa-star"></span>
+
+              <!-- <span id="star">
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
@@ -473,13 +530,15 @@
               </span>
               <span>
                 <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-              </span>
+              </span> -->
+
             </div>
             <img style="margin-top: 30px;" src="images/idSearchText.png" alt="">
           </div>
         </div>
 
-        <img id="win"  style="margin-left: 735px;margin-top: -15px;" src="images/WIN.png" alt="">
+        <img id="win" data-aos="fade-down" data-aos-duration="1500"
+          style="margin-left: 735px;margin-top: -15px;" src="images/WIN.png" alt="">
         <!-- <img src="images/index_08.png" width="1080" height="316" alt="" /> -->
       </div>
     </div>
@@ -513,5 +572,9 @@
 
   </div>
 </body>
+
+<script>
+  AOS.init();
+</script>
 
 </html>

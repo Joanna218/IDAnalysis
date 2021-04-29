@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <title>鄉民研究所</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link href="gears.css" rel="stylesheet" type="text/css">
+  <!-- <link href="gears.css" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/aos.js"></script>
 </head>
 
@@ -202,7 +203,7 @@
 
   .fa-star.check {
     opacity: 1;
-    margin-left: -33px;
+    margin-left: -35px;
   }
 
 
@@ -243,7 +244,97 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 135px;
+  }
 
+  #gearBoxp {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 500px;
+    top: 130px;
+  }
+
+  #gearBoxcrm {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: 340px;
+    top: -40px;
+  }
+
+  #gearBoxmk {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin-left: 160px;
+    top: -70px;
+  }
+
+  .gear {
+    background-image: url('images/gears.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .gear.is-active {
+    animation: rotating 2s linear infinite;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .gearp {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gearcrm {
+    width: 140px;
+    height: 140px;
+  }
+
+  .gearmk {
+    width: 110px;
+    height: 110px;
+  }
+
+  .gearPText {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -92px;
+    left: 12px;
+  }
+
+  .gearcrmText {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -97px;
+    left: 13px;
+  }
+
+  .gearmkText {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -86px;
+    left: 11px;
   }
 </style>
 
@@ -548,7 +639,31 @@
         <h2>解決方案</h2>
         <hr style="background-color: #4b59c7;margin-bottom: 50px; width:20%; height:4px;border:none;">
         <div class="solveImg">
+          <div id="gearBoxp">
+            <div class="gear gearp"></div>
+            <span class="gearPText">政治 <br> 行銷</span>
+          </div>
 
+          <div id="gearBoxcrm">
+            <div class="gear gearcrm"></div>
+            <span class="gearcrmText">顧客關係 <br> 管理</span>
+          </div>
+
+          <div id="gearBoxmk">
+            <div class="gear gearmk"></div>
+            <span class="gearmkText">社群 <br> 行銷</span>
+          </div>
+
+
+          <!-- <div class="gear gearp">
+          </div>
+          <span class="gearPText">政治 <br> 行銷</span> -->
+          <!-- <div class="gear">
+            <img class="gearp" style="margin-left: 200px;
+            margin-top: 120px;" src="images/gears.png" width="110" height="110" alt="">
+            <span style="margin-left: 200px;margin-top: -100px;position: relative;">政治</span>
+
+          </div> -->
         </div>
 
 
@@ -575,6 +690,20 @@
 
 <script>
   AOS.init();
+
+  $('#gearBoxp').hover(function() {
+    $('.gearp').toggleClass('is-active')
+  });
+
+  $('#gearBoxcrm').hover(function() {
+    $('.gearcrm').toggleClass('is-active')
+  });
+
+  $('#gearBoxmk').hover(function() {
+    $('.gearmk').toggleClass('is-active')
+  });
 </script>
 
 </html>
+
+

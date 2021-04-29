@@ -85,7 +85,7 @@
     padding: 20px;
     margin: 10px;
     border: 1px gray;
-    box-shadow: 2px 2px 2px rgba(197, 191, 191, 0.7);
+    /* box-shadow: 2px 2px 2px #34b8e5; */
     border-radius: 5px;
     background-color: #fff;
   }
@@ -126,6 +126,48 @@
   .showContent {
     display: none;
   }
+
+
+  .mksolve:hover {
+    background-color: #e9f7fd;
+    border: 3px solid #34b8e5;
+  }
+
+  .mksolve:hover .mksolvehr {
+    height: 0px;
+  }
+
+  .mksolvehr {
+    background-color:#34b8e5;
+  }
+
+  .crmsolve:hover {
+    background-color: #e9fbf8;
+    border: 3px solid #3fd9b8;
+  }
+
+  .crmsolve:hover .crmsolvehr {
+    height: 0px;
+  }
+
+  .crmsolvehr {
+    background-color: #41dabe;
+  }
+
+  .posolve:hover {
+    background-color: #fff0f5;
+    border: 3px solid #fa337c;
+  }
+
+  .posolve:hover .posolvehr {
+    height: 0px;
+  }
+
+  .posolvehr {
+    background-color: #fa327b;
+  }
+
+
 </style>
 
 <body>
@@ -291,24 +333,24 @@
           <div id="socialMarketing" class="program_content show">
             <img src="images/program_04.png" alt="">
             <div class="solveBox">
-              <div class="solve solve1">
-                <hr style="background-color:#35bae5">
+              <div class="solve solve1 mksolve">
+                <hr class="mksolvehr">
                 <h3>企業/品牌/產品<br>口碑優化服務</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   利用系統化的搜尋系統，提供客戶專業的口碑話題策略。以social listen-ing瞭解鄉民的興趣取向，協助品牌擬定完善的口碑優化測略。
                 </p>
                 <img style="margin: 20px 0px;margin-top: 55px;" src="images/social1.png" alt="">
               </div>
-              <div class="solve solve2">
-                <hr style="background-color:#35bae5">
+              <div class="solve solve2 mksolve">
+                <hr class="mksolvehr">
                 <h3 style="height:42px;line-height: 40px;">數位公關議題管理</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   運用ID標籤歸納出的N種生活型態族群，配合不同興趣意見撰寫有主題性的廣告軟文，讓消費者在不知不覺中就被你行銷囉！
                 </p>
                 <img style="margin: 20px 0px;" src="images/social2.png" alt="">
               </div>
-              <div class="solve solve3">
-                <hr style="background-color:#35bae5">
+              <div class="solve solve3 mksolve">
+                <hr class="mksolvehr">
                 <h3 style="height:42px;line-height: 40px;">粉絲團經營</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   依照鄉民的興趣、意見、休閒活動，創意設計臉書貼文，創造更佳的粉絲互動率與黏著度。
@@ -321,24 +363,24 @@
           <div id="crm" class="program_content">
             <img src="images/program_06.png" alt="">
             <div class="solveBox">
-              <div class="solve solve1">
-                <hr style="background-color:#41dabe">
+              <div class="solve solve1 crmsolve">
+                <hr class="crmsolvehr">
                 <h3 style="height:42px;line-height: 40px;">挖掘潛在客戶</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   透過消費者在網路上留下的訊息，協助客戶更廣泛且精準地找到TA。
                 </p>
                 <img style="margin: 20px 0px;margin-top: 100px;" src="images/crm1.png" alt="">
               </div>
-              <div class="solve solve2">
-                <hr style="background-color:#41dabe">
+              <div class="solve solve2 crmsolve">
+                <hr class="crmsolvehr">
                 <h3 style="height:42px;line-height: 40px;">剖析客群樣貌</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   持續更新ID狀態，同時從網路語料中蒐羅更多匿名ID的信息，追蹤品牌擁護者與黑粉，描繪TA的人口組成、興趣、偏好的話題類型與消費行為。
                 </p>
                 <img style="margin: 20px 0px;" src="images/crm2.png" alt="">
               </div>
-              <div class="solve solve3">
-                <hr style="background-color:#41dabe">
+              <div class="solve solve3 crmsolve">
+                <hr class="crmsolvehr">
                 <h3 style="height:42px;line-height: 40px;">行銷策略擬定</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   ID標籤庫專門針對品牌與通路進行廣泛的標籤設置，讓品牌更輕易掌握客戶的消費行為，分析ID的偏好通路，以制定通路行銷策略。
@@ -351,16 +393,16 @@
           <div id="policyMk" class="program_content">
             <img src="images/program_08.png" alt="">
             <div class="solveBox" style="justify-content: space-evenly;">
-              <div class="solve solve1" style="width: calc(90%/2);">
-                <hr style="background-color:#fa327b">
+              <div class="solve solve1 posolve" style="width: calc(90%/2);">
+                <hr class="posolvehr">
                 <h3 style="height:42px;line-height: 40px;">社群政治民意調查</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   根據《鄉民研究所》的ID政治傾向標籤，可針對網路上的社群媒體政治進行民意調查。可計算黨派與政治人物的信任指數，也能夠選前進行得票率預測。
                 </p>
                 <img style="margin: 20px 0px;margin-top: 45px;" src="images/policyMk1.png" alt="">
               </div>
-              <div class="solve solve2" style="width: calc(90%/2);">
-                <hr style="background-color:#fa327b">
+              <div class="solve solve2 posolve" style="width: calc(90%/2);">
+                <hr class="posolvehr">
                 <h3 style="height:42px;line-height: 40px;">議題管理</h3>
                 <p style="text-align: left;letter-spacing: 1px;line-height: 24px;">
                   根據政治話題風向，進行事件議題的監測控管，對突發的網路輿情、新聞進行危機處理，讓您掌握最即時的第一手消息；與此同時，運用ID政治立場標籤，

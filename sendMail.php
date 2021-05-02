@@ -6,7 +6,7 @@ if(!empty($_POST['recaptchaToken']))
       $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['recaptchaToken']);
       $responseData = json_decode($verifyResponse);
       if($responseData->success) {
-        // sendMail();
+        sendMail();
         $res->msg = "表單送出成功，將會有專人為您服務！";
         $res->status = true;
       } else {

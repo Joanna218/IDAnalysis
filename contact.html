@@ -6,7 +6,17 @@
   <title>鄉民研究所</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
+<style>
+  .isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+</style>
 
 <body>
   <div id="id_wrapper">
@@ -64,11 +74,21 @@
               <td height="0" align="right" valign="middle">&nbsp;</td>
             </tr>
             <tr>
-              <td height="50" colspan="2" align="center"><img src="images/not.png" width="360" height="100" alt="" />
+              <td>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LdnYrsaAAAAAFUk6gIoxe3XiG992RMUMjp6JrS3"
+                  data-theme="light" data-size="normal"
+                  data-callback="verify"
+                  data-expired-callback="expired"
+                  data-error-callback="error">
+                </div>
               </td>
             </tr>
             <tr>
-              <td height="66" colspan="2" align="left" valign="top"><a href="#" id="submit" class="sendbtn">確認送出 </a></td>
+              <td height="66" colspan="2" align="left" valign="top">
+                <a href="#" id="submit" class="sendbtn isDisabled" disabled="disabled">確認送出 </a>
+              </td>
             </tr>
           </table>
         </div>
@@ -80,10 +100,24 @@
   </div>
 </body>
 <script>
+  var recaptchaToken;
+
+  // Google reCAPTCH 拿到 token 驗證 => 解除送出按鈕
+  function verify(token) {
+      recaptchaToken = token;
+      $('#submit').removeClass('isDisabled');
+    }
+
+
   $(document).ready(function () {
 
     $("#submit").click(function (e) {
-      e.preventDefault();
+      event.preventDefault();
+
+      if ($(this).hasClass('isDisabled')) {
+        return false;
+      }
+
       var contactPerson = $("#contactPerson").val();
       var department = $("#department").val();
       var contactPhone = $("#contactPhone").val();
@@ -109,11 +143,19 @@
           companyOrg: companyOrg,
           email: email,
           selectDemand: selectDemand,
-          note: note
+          note: note,
+          recaptchaToken: recaptchaToken
         },
         cache: false,
         success: function (res) {
-          alert(res);
+          var result = JSON.parse(res);
+          if (result.status) {
+            alert(result.msg);
+            clearUc();
+          } else {
+            alert(result.msg);
+          }
+
         },
         error: function (xhr, status, error) {
           console.error(xhr);
@@ -121,6 +163,20 @@
       });
 
     });
+
+
+    // 清除表單控制項
+    function clearUc() {
+      $("#contactPerson").val("");
+      $("#department").val("");
+      $("#contactPhone").val("");
+      $("#companyOrg").val("");
+      $("#email").val("");
+      $("#selectDemand").val("報告產品");
+      $("#note").val("");
+    }
+
+
 
   });
 </script>

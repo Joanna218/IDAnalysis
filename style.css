@@ -145,6 +145,7 @@ a {
 #index_sec_content {
     width: 1080px;
     margin: 0 auto;
+    /* height: 500px; */
 }
 
 #index_sec_content img {

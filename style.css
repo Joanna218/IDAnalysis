@@ -38,6 +38,8 @@ a {
 
 #topbanner {
     /* width: 1300px; */
+    max-width: 1300px;
+    position: relative;
     margin: 0 auto;
     height: 564px;
     background: url('images/svg/banner.svg');
@@ -205,6 +207,8 @@ a {
     background: url('images/four_bg.jpg');
     background-position: center;
     padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #index_four_content {
@@ -240,7 +244,9 @@ a {
     height: 450px;
     background: url('images/five_bg.jpg');
     background-position: center;
-    padding-top: 108px;
+    /* padding-top: 108px; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #index_five_content {
@@ -325,6 +331,7 @@ a {
     padding-top: 100px;
     height: 204px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #life_topbanner_content {

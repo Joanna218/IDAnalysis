@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>鄉民研究所</title>
   <link rel="icon" href="images/icon.png">
   <link href="style.css" rel="stylesheet" type="text/css">
@@ -10,6 +10,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/aos.js"></script>
+
 </head>
 
 <style>
@@ -222,34 +223,35 @@
   .solveImg {
     width: 900px;
     height: 550px;
-    background-image: url('images/solveText.png');
+    background-image: url('images/svg/solveImg.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 135px;
+    margin-left: 75px;
+    margin-top: 100px;
   }
 
   #gearBoxp {
     width: 100px;
     height: 100px;
     position: relative;
-    margin-left: 500px;
-    top: 130px;
+    margin-left: 567px;
+    top: 70px;
   }
 
   #gearBoxcrm {
     width: 120px;
     height: 120px;
     position: relative;
-    margin-left: 340px;
-    top: -40px;
+    margin-left: 390px;
+    top: -96px;
   }
 
   #gearBoxmk {
     width: 90px;
     height: 90px;
     position: relative;
-    margin-left: 160px;
-    top: -70px;
+    margin-left: 198px;
+    top: -120px;
   }
 
   .gear {
@@ -318,6 +320,172 @@
     top: -86px;
     left: 11px;
   }
+
+  h4 > a ,p > a{
+    color: black;
+  }
+
+  #whiteBanner {
+    background-image: url('images/svg/whiteBanner.svg');
+    width: 926px;
+    height: 274px;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  #boyhead {
+    /* width: 20%; */
+    background-image: url('images/svg/boy.svg');
+    width: 140px;
+    height: 140px;
+    background-size: contain;
+  }
+
+  #boyDesc1 {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #boyDesc2 {
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  .boylabel {
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 16px;
+  }
+
+  .label1 {
+    color: rgb(255,255,255);
+    background-color: rgba(237,125,49)
+  }
+
+  .label1:hover {
+    background-color: rgba(237,125,49,0.75)
+  }
+
+  .label2 {
+    color: rgb(255,255,255);
+    background-color: rgba(112,173,71)
+  }
+
+  .label2:hover {
+    background-color: rgba(112,173,71,0.75)
+  }
+
+  .label3 {
+    color: rgb(255,255,255);
+    background-color: rgba(91,155,213)
+  }
+
+  .label3:hover {
+    background-color: rgba(91,155,213,0.75)
+  }
+
+  .label4 {
+    color: rgb(255,255,255);
+    background-color: rgba(68,114,196)
+  }
+
+  .label4:hover {
+    background-color: rgba(68,114,196,0.75)
+  }
+
+  .label5 {
+    color: rgb(255,255,255);
+    background-color: rgba(112,48,160)
+  }
+
+  .label5:hover {
+    background-color: rgba(112,48,160,0.75)
+  }
+
+  .label6 {
+    color: rgb(255,255,255);
+    background-color: rgba(165,165,165)
+  }
+
+  .label6:hover {
+    background-color: rgba(165,165,165,0.75)
+  }
+
+  .fiveAdTitle {
+    display: flex;
+  }
+
+  .fiveAdText {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(255,255,255);
+    margin-top: 10px;
+  }
+
+  #bannerText {
+    width: 50%;
+    height: 200px;
+    margin-left: 18%;
+    margin-top: 7%;
+  }
+
+  .bannertext1 {
+    font-size: 38px;
+    color: #4b59c7;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 10px;
+    /* line-height: 2.5rem; */
+  }
+
+  .bannertext2 {
+    font-size: 72px;
+    color: #4b59c7;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 12px;
+    line-height: 6.5rem;
+  }
+
+  .bannertext3 {
+    font-size: 38px;
+    color: #404040;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 10px;
+    /* line-height: 4rem; */
+  }
+
+  #solveText1 {
+    position: absolute;
+    left: 170px;
+    top: 180px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    text-align: right;
+  }
+
+  #solveText2 {
+    position: absolute;
+    left: 385px;
+    top: 100px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+  }
+
+  #solveText3 {
+    position: absolute;
+    left: 760px;
+    top: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    text-align: left;
+  }
+
 </style>
 
 <body>
@@ -326,7 +494,7 @@
       <div id="header">
         <div id="logo">
           <a href="index.html">
-            <img src="images/logo.png" width="170" height="30" alt="" />
+            <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
           </a>
         </div>
         <ul>
@@ -338,6 +506,16 @@
           <li class="white"><a href="contact.html">聯絡我們</a></li>
         </ul>
       </div>
+      <div id="bannerText">
+        <p>
+          <span class="bannertext1">i-Buzz獨家</span>
+          <br>
+          <span class="bannertext2">ID分析技術</span>
+          <br>
+          <span class="bannertext3">讓大數據取代傳統市場</span>
+        </p>
+
+      </div>
     </div>
 
     <div id="index_sec">
@@ -346,7 +524,8 @@
         <!-- 上方介紹 -->
         <div id="index_sec_content_intro">
           <div id="index_sec_content_box_img">
-            <img src="images/index_01_1.png" alt=""/>
+            <!-- <img src="images/index_01_1.png" alt=""/> -->
+            <img src="images/資產 1.svg" alt="" width="418" height="352">
           </div>
           <div id="index_sec_content_box_info" style="margin-left: 10%;padding-top: 50px;">
             <div style="display: flex;">
@@ -373,7 +552,9 @@
             <div class="t">
               <div class="t2">
                 <img src="images/item1.png" alt="">
-                <h4>七大特徵標籤</h4>
+                <h4>
+                  <a href="./technology.html">七大特徵標籤</a>
+                </h4>
                 <p style="padding-bottom: 16px;">
                   6000多種標籤
                   <br>
@@ -384,8 +565,10 @@
 
             <div class="t">
               <div class="t2">
-                <img src="images/item2.png" alt="">
-                <h4>獨家技術</h4>
+                <img src="images/資產 1.svg" alt="" width="76" height="69">
+                <h4>
+                  <a href="./technology.html">獨家技術</a>
+                </h4>
                 <p>
                   辨識詞庫
                   <br>
@@ -401,11 +584,11 @@
                 <img src="images/item3.png" alt="">
                 <h4>分析應用</h4>
                 <p>
-                  生活型態
+                  <a href="./life.html">生活型態</a>
                   <br>
-                  市場研究
+                  <a href="./market.html">市場研究</a>
                   <br>
-                  政治民意
+                  <a href="./political.html">政治民意</a>
                 </p>
               </div>
             </div>
@@ -413,7 +596,9 @@
             <div class="t">
               <div class="t2">
                 <img src="images/item4.png" alt="">
-                <h4>產品服務</h4>
+                <h4>
+                  <a href="./program.html">產品服務</a>
+                </h4>
                 <p>
                   ID標籤資料庫
                   <br>
@@ -427,7 +612,9 @@
             <div class="t">
               <div class="t2 t3">
                 <img src="images/item5.png" alt="">
-                <h4>解決方案</h4>
+                <h4>
+                  <a href="./program.html">解決方案</a>
+                </h4>
                 <p>
                   洞悉消費者生活型態
                   <br>
@@ -443,7 +630,38 @@
           <img src="images/arrowDown.png" alt="">
         </div>
 
-        <img style="margin: 0 auto;" src="images/index_05.png" width="926" height="274" alt="" style="margin-left: 80px;" />
+      <div>
+        <div id="whiteBanner">
+          <div id="boyDesc1">
+            <div id="boyhead"></div>
+            <p style="line-height: 1.5rem;">
+              PTT
+              <br>
+              id：XXXXX
+            </p>
+            <!-- <img src="images/svg/boy.svg" alt=""> -->
+          </div>
+          <div id="boyDesc2">
+            <p style="text-align: left;line-height: 2rem;">
+              「政黨票投民眾黨，但立委票會投給蔣萬安」
+              <br>
+              「本魯宅母單也驕傲」
+              <br>
+              「我都會去家裡附近台北體育館打羽球」
+              <br>
+              「本人的6s使用了4年.....暫時不考慮其他品牌，XS要買的話要買二手
+            </p>
+            <div style="display: flex">
+                <span class="boylabel label1">男性</span>
+                <span class="boylabel label2">未婚</span>
+                <span class="boylabel label3">無小孩</span>
+                <span class="boylabel label4">喜歡打羽球</span>
+                <span class="boylabel label5">iPhone忠實用戶</span>
+                <span class="boylabel label6">政治傾向偏藍</span>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
 
@@ -455,12 +673,12 @@
         <div style="position: relative;">
           <p style="position: absolute;top: 192px;left: 490px; font-size: 36px;line-height: 42px;">鄉民ID<br>資料庫</p>
           <!-- <img class="dotZoom" style="position: absolute;top: 125px;left: 536px;z-index: 999;" src="images/greenDot.png" alt="" srcset=""> -->
-          <img class="itemCircle1" src="images/itemCircle1.png" alt="" srcset="">
-          <img class="itemCircle2" src="images/itemCircle2.png" alt="">
-          <img class="itemCircle3" src="images/itemCircle3.png" alt="">
-          <img class="itemCircle4" src="images/itemCircle4.png" alt="">
-          <img class="itemCircle5" src="images/itemCircle5.png" alt="">
-          <img class="itemCircle6" src="images/itemCircle6.png" alt="">
+          <img class="itemCircle1" src="images/svg/itemCircle1.svg" width="141" height="141" alt="" srcset="">
+          <img data-aos="fade-left" class="itemCircle2" src="images/svg/itemCircle2.svg" width="139" height="126" alt="">
+          <img data-aos="fade-up-left" class="itemCircle3" src="images/svg/itemCircle3.svg" width="135" height="121" alt="">
+          <img data-aos="fade-up" class="itemCircle4" src="images/svg/itemCircle4.svg" width="137" height="138" alt="">
+          <img data-aos="fade-up-right" class="itemCircle5" src="images/svg/itemCircle5.svg" width="138" height="123" alt="">
+          <img data-aos="fade-right" class="itemCircle6" src="images/svg/itemCircle6.svg" width="134" height="122" alt="">
           <img style="transform: translatey(40%);" src="images/circle.png" alt="">
         </div>
 
@@ -498,7 +716,8 @@
         data-aos-delay="100" style="position: absolute;left: 833px;top: 259px;" src="images/b7.png" alt="" srcset="">
 
         <h5 data-aos="fade-up" data-aos-delay="150" style="position: absolute;left: 840px;top: 240px;line-height: 28px;font-size: 18px;font-weight: 100;text-align: left;">針對消費行為所打造<br>的三階層辨識詞庫</h5>
-        <img style="margin-left: -30px;" src="images/tyBGC.png" alt="">
+        <!-- <img style="margin-left: -30px;" src="images/tyBGC.png" alt=""> -->
+        <img style="margin-left: -30px;" src="images/svg/unitech.svg" alt="">
       </div>
     </div>
 
@@ -531,14 +750,18 @@
           </div>
         </div>
         <!-- <img src="images/index_07.png" width="1080" height="402" alt="" /> -->
+
       </div>
     </div>
 
     <div id="index_five">
       <div id="index_five_content">
         <div style="display: flex;justify-content: space-between;">
-          <div style="text-align: left;">
-            <img src="images/traditional.png" alt="">
+          <div style="text-align: left;width: 35%;">
+            <div class="fiveAdTitle">
+              <h3 style="width: 90%;font-size: 38px;color: rgb(255,255,255,0.9);">傳統市場</h3>
+              <img src="images/svg/fiveAdicon3.svg" width="120" height="120" alt="">
+            </div>
             <div>
                 <span class="fa fa-2x fa-star"></span>
                 <span data-aos="zoom-in"
@@ -557,28 +780,26 @@
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
                 <span class="fa fa-2x fa-star"></span>
-
-              <!-- <span id="star">
-                <span class="fa fa-2x fa-star"></span>
-                <span class="fa fa-2x fa-star"></span>
-                <span class="fa fa-2x fa-star"></span>
-              </span>
-              <span>
-                <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-                <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-                <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-                <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-                <span style="opacity: 0.5;" class="fa fa-2x fa-star"></span>
-              </span> -->
             </div>
 
-            <img style="margin-top: 30px;" src="images/traditionalText.png" alt="">
+            <div class="fiveAdText">
+              <li>收費額貴</li>
+              <li>接處族群單一</li>
+              <li>收發問卷耗時</li>
+              <li>資料更新時間慢</li>
+              <li>針對一次性主題，資料無法重複利用</li>
+            </div>
+            <!-- <img style="margin-top: 30px;" src="images/traditionalText.png" alt=""> -->
           </div>
           <div>
-            <img style="margin-left: -15px;margin-top: 60px;transform: translateY(30%);" src="images/5feature.png" alt="">
+            <img style="margin-left: -15px;transform: translateY(30%);" src="images/svg/fiveAdicon2.svg" alt="">
           </div>
-          <div style="text-align: left;">
-            <img src="images/IdSearch.png" alt="">
+          <div style="text-align: left;width: 35%;">
+            <div class="fiveAdTitle">
+              <h3 style="width: 90%;font-size: 38px;color: rgb(255,255,255,0.9);">鄉民研究所</h3>
+              <img src="images/svg/fiveAdicon3.svg" width="120" height="120" alt="">
+            </div>
+            <!-- <img src="images/IdSearch.png" alt=""> -->
             <div>
 
               <span class="fa fa-2x fa-star"></span>
@@ -625,12 +846,19 @@
               </span> -->
 
             </div>
-            <img style="margin-top: 30px;" src="images/idSearchText.png" alt="">
+            <div class="fiveAdText">
+              <li>精準行銷</li>
+              <li>圖表直覺可視化</li>
+              <li>自動分群消費者</li>
+              <li>大數據輿情分類技術/li>
+              <li>辨識精準率80% UP</li>
+            </div>
+            <!-- <img style="margin-top: 30px;" src="images/idSearchText.png" alt=""> -->
           </div>
         </div>
 
         <img id="win" data-aos="fade-down" data-aos-duration="1500"
-          style="margin-left: 735px;margin-top: -15px;" src="images/WIN.png" alt="">
+          style="margin-left: 716px;margin-top: -15px;" src="images/svg/WIN.svg" alt="">
         <!-- <img src="images/index_08.png" width="1080" height="316" alt="" /> -->
       </div>
     </div>
@@ -639,6 +867,24 @@
       <div id="index_six_content">
         <h2>解決方案</h2>
         <hr style="background-color: #4b59c7;margin-bottom: 50px; width:20%; height:4px;border:none;">
+
+        <!-- 政治行銷 -->
+        <p data-aos="fade-down" data-aos-delay="300" id="solveText1">協助您瞭解媒體風向、
+            <br>
+            掌握社群民意
+        </p>
+
+        <!-- 顧客關係 -->
+        <p data-aos="fade-down" data-aos-delay="300" id="solveText2"> 運用系統化管理具像化鄉民的消費行為
+          <br>
+          讓品牌挖掘更全面的消費者輪廓
+        </p>
+
+         <!-- 顧客關係 -->
+         <p data-aos="fade-down" data-aos-delay="300" id="solveText3">觀察消費者市場的需求轉變
+            <br>
+            提供品牌長遠而縝密的行銷策略規劃
+        </p>
         <div class="solveImg">
           <div id="gearBoxp">
             <div class="gear gearp"></div>
@@ -679,6 +925,7 @@
     $('.gearmk').toggleClass('is-active')
   });
 </script>
+
 
 </html>
 

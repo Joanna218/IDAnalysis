@@ -46,7 +46,7 @@ function sendMail() {
 
 
 
-  $to = "joanna@return.com.tw";
+  $to = "idanalysis_service@i-buzz.com.tw";
   $subject = "iBuzzID";
 
   $message = "
@@ -85,8 +85,8 @@ function sendMail() {
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
   // More headers
-  $headers .= 'From: <joanna@return.com.tw>' . "\r\n";
-  $headers .= 'Cc: joanna@return.com.tw' . "\r\n";
+  $headers .= 'From: <jingyulin888@gmail.com.tw>' . "\r\n";
+  $headers .= 'Cc: okokis101@gmail.com.tw' . "\r\n";
 
   mail($to,$subject,$message,$headers);
 }

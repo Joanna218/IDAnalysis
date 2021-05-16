@@ -2,10 +2,14 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>鄉民研究所</title>
   <link rel="icon" href="images/icon.png">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/aos.js"></script>
 </head>
 
 <style>
@@ -16,31 +20,64 @@
   }
 
   #tag_01:hover {
-    background-image: url('images/7tag_01-1.png');
+    background-image: url('images/svg/7tags_01-1.svg');
   }
 
   #tag_02:hover {
-    background-image: url('images/7tag_02-1.png');
+    background-image: url('images/svg/7tags_02-1.svg');
   }
 
   #tag_03:hover {
-    background-image: url('images/7tag_03-1.png');
+    background-image: url('images/svg/7tags_03-1.svg');
   }
 
   #tag_04:hover {
-    background-image: url('images/7tag_04-1.png');
+    background-image: url('images/svg/7tags_04-1.svg');
   }
 
   #tag_05:hover {
-    background-image: url('images/7tag_05-1.png');
+    background-image: url('images/svg/7tags_05-1.svg');
   }
 
   #tag_06:hover {
-    background-image: url('images/7tag_06-1.png');
+    background-image: url('images/svg/7tags_06-1.svg');
   }
 
   #tag_07:hover {
-    background-image: url('images/7tag_07-1.png');
+    background-image: url('images/svg/7tags_07-1.svg');
+  }
+
+  *{
+    /* border: 1px solid; */
+  }
+
+  .row {
+    display: flex;
+    padding: 50px 0px;
+  }
+
+  .techDesc {
+    text-align: left;
+  }
+
+  .techmrl {
+    margin-left: 66px;
+  }
+
+  .techDesc h1{
+    color: #847fff;
+    font-size: 70px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .techDesc h2{
+    font-size: 36px;
+  }
+
+  .techDesc p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 26px;
   }
 </style>
 
@@ -48,7 +85,11 @@
   <div id="id_wrapper">
     <div id="topbanner">
       <div id="header">
-        <div id="logo"><a href="index.html"><img src="images/logo.png" width="170" height="30" alt="" /></a></div>
+        <div id="logo">
+          <a href="index.html">
+            <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
+          </a>
+        </div>
         <ul>
           <li><a href="technology.html" style=" border-bottom: #4b59c7 solid 4px;">核心技術</a></li>
           <li><a href="life.html">生活型態</a></li>
@@ -58,12 +99,53 @@
           <li class="white"><a href="contact.html">聯絡我們</a></li>
         </ul>
       </div>
-
+      <div id="bannerText">
+        <p>
+          <span class="bannertext1">i-Buzz獨家</span>
+          <br>
+          <span class="bannertext2">ID分析技術</span>
+          <br>
+          <span class="bannertext3">讓大數據取代傳統市場</span>
+        </p>
+      </div>
 
     </div>
 
     <div id="index_sec" style="padding-bottom: 0;">
-      <div id="index_sec_content"><img src="images/technology_01.png" width="1080" height="1091" alt="" /></div>
+      <div id="index_sec_content" style="padding-bottom: 60px;">
+        <div class="row">
+          <div>
+            <img style="margin-left: 60px;" src="images/svg/tech02.svg" width="438" height="268">
+          </div>
+          <div class="techDesc techmrl">
+            <h1>01</h1>
+            <h2>最細緻的辨識詞</h2>
+            <p data-aos="zoom-in">針對消費行為擁有「品牌、系列、產品」三階層辨識詞庫，應用於人口結構、消費通路、旅遊國家、關注品牌等，從消費偏好到品牌產品的選擇，都能囊括收錄進鄉民ID資料庫。</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="techDesc">
+            <h1>02</h1>
+            <h2>獨家研發領域詞權重統計</h2>
+            <p data-aos="zoom-in">運用相同主題脈絡下的相關詞彙以及頻道權重計算關鍵字的準確性，
+              <br>
+              並且建立統計分類模型，自動化歸類分析ID休閒活動偏好的可能性。</p>
+          </div>
+          <div class="techmrl">
+            <img src="images/svg/tech02.svg" width="438" height="268">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <img style="margin-left: 60px;" src="images/svg/tech03.svg" width="420" height="243">
+          </div>
+          <div class="techDesc techmrl">
+            <h1>03</h1>
+            <h2>話題分類辨識模型</h2>
+            <p data-aos="zoom-in">將已標記資料文本進行自動斷詞分析，並進一步計算兩者結果之間的關聯性，形成ID興趣分類辨識預測模型。</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="index_third" style="padding-top: 0;">
@@ -72,16 +154,16 @@
       <div class="line_200_2"></div>
       <h4>將輿情數據結構化後貼標，呈現鄉民多元的觀點 </h4>
       <div class="tags">
-        <img id="tag_01" src="images/7tag_01.png" alt="" />
-        <img id="tag_02" src="images/7tag_02.png" alt="" />
-        <img id="tag_03" src="images/7tag_03.png" alt="" />
+        <img id="tag_01" src="images/svg/7tags_01.svg" alt="" />
+        <img id="tag_02" src="images/svg/7tags_02.svg" alt="" />
+        <img id="tag_03" src="images/svg/7tags_03.svg" alt="" />
       </div>
 
       <div class="tags">
-        <img id="tag_04" src="images/7tag_04.png" alt="" />
-        <img id="tag_05" src="images/7tag_05.png" alt="" />
-        <img id="tag_06" src="images/7tag_06.png" alt="" />
-        <img id="tag_07" src="images/7tag_07.png" alt="" />
+        <img id="tag_04" src="images/svg/7tags_04.svg" alt="" />
+        <img id="tag_05" src="images/svg/7tags_05.svg" alt="" />
+        <img id="tag_06" src="images/svg/7tags_06.svg" alt="" />
+        <img id="tag_07" src="images/svg/7tags_07.svg" alt="" />
       </div>
     </div>
 
@@ -100,5 +182,9 @@
 
   </div>
 </body>
+
+<script>
+  AOS.init();
+</script>
 
 </html>

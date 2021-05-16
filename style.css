@@ -124,7 +124,7 @@ a {
 }
 
 #index_sec h2 {
-    font-size: 46px;
+    /* font-size: 46px; */
     font-weight: 700;
     color: #000;
     width: 100%;
@@ -169,7 +169,7 @@ a {
     color: #000;
     width: 100%;
     margin: 0;
-    margin-bottom:12px;
+    margin-bottom: 12px;
     /* clear: bot
     /* line-height: 70px; */
 }
@@ -225,7 +225,7 @@ a {
     width: 100%;
     clear: both;
     margin: 0;
-    margin-bottom:12px;
+    margin-bottom: 12px;
     /* line-height: 70px; */
 }
 
@@ -278,7 +278,7 @@ a {
     width: 100%;
     clear: both;
     margin: 0;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     /* line-height: 70px; */
 }
 
@@ -820,6 +820,40 @@ a.sendbtn:hover {
     background-color: #452dfc;
 }
 
+/* banner 的文字 */
+#bannerText {
+    width: 50%;
+    height: 200px;
+    left: 120px;
+    top: 100px;
+    position: relative;
+}
+
+.bannertext1 {
+    font-size: 38px;
+    color: #4b59c7;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.bannertext2 {
+    font-size: 72px;
+    color: #4b59c7;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 12px;
+    line-height: 6.5rem;
+}
+
+.bannertext3 {
+    font-size: 38px;
+    color: #404040;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 10px;
+}
+
 
 
 
@@ -1001,4 +1035,7 @@ a.sendbtn:hover {
     #about1txt {
         width: 48%;
     }
+
+
+
 }

@@ -10,15 +10,6 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<style>
-  .isDisabled {
-    color: currentColor;
-    cursor: not-allowed;
-    opacity: 0.5;
-    text-decoration: none;
-}
-</style>
-
 <body>
   <div id="id_wrapper">
     <div id="topbanner">
@@ -33,8 +24,6 @@
           <li class="white"><a href="contact.html" style=" border-bottom: #4afdff solid 4px;">聯絡我們</a></li>
         </ul>
       </div>
-
-
     </div>
 
     <div id="index_sec">
@@ -75,20 +64,8 @@
               <td height="0" align="right" valign="middle">&nbsp;</td>
             </tr>
             <tr>
-              <td>
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LdnYrsaAAAAAFUk6gIoxe3XiG992RMUMjp6JrS3"
-                  data-theme="light" data-size="normal"
-                  data-callback="verify"
-                  data-expired-callback="expired"
-                  data-error-callback="error">
-                </div>
-              </td>
-            </tr>
-            <tr>
               <td height="66" colspan="2" align="left" valign="top">
-                <a style="margin-top: 30px;" href="#" id="submit" class="sendbtn isDisabled" disabled="disabled">確認送出 </a>
+                <a style="margin-top: 30px;" href="#" id="submit" class="sendbtn" disabled="disabled">確認送出 </a>
               </td>
             </tr>
           </table>
@@ -101,23 +78,10 @@
   </div>
 </body>
 <script>
-  var recaptchaToken;
-
-  // Google reCAPTCH 拿到 token 驗證 => 解除送出按鈕
-  function verify(token) {
-      recaptchaToken = token;
-      $('#submit').removeClass('isDisabled');
-    }
-
-
   $(document).ready(function () {
 
     $("#submit").click(function (e) {
       event.preventDefault();
-
-      if ($(this).hasClass('isDisabled')) {
-        return false;
-      }
 
       var contactPerson = $("#contactPerson").val();
       var department = $("#department").val();
@@ -145,7 +109,6 @@
           email: email,
           selectDemand: selectDemand,
           note: note,
-          recaptchaToken: recaptchaToken
         },
         cache: false,
         success: function (res) {

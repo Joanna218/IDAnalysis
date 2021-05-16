@@ -11,63 +11,64 @@
 
 <style>
   #program_tabs {
+    width: 1080px;
     display: flex;
     justify-content: space-around;
   }
 
   .tab1 {
-    width: 274px;
+    width: 272px;
     height: 66px;
-    background-image: url('images/program_btn_01.png');
+    background-image: url('images/svg/mkbtnW.svg');
   }
 
   .tab1:hover {
-    background-image: url('images/program_btn_01-1.png');
+    background-image: url('images/svg/mkbtnB.svg');
   }
 
   .tab1.is-active {
-    background-image: url('images/program_btn_01-1.png');
+    background-image: url('images/svg/mkbtnB.svg');
   }
 
   .tab1.is-active:hover {
-    background-image: url('images/program_btn_01-1.png');
+    background-image: url('images/svg/mkbtnB.svg');
   }
 
 
   .tab2 {
-    width: 274px;
+    width: 272px;
     height: 66px;
-    background-image: url('images/program_btn_02.png');
+    background-image: url('images/svg/crmbtnW.svg');
   }
 
   .tab2:hover {
-    background-image: url('images/program_btn_02-1.png');
+    background-image: url('images/svg/crmbtnG.svg');
   }
 
   .tab2.is-active {
-    background-image: url('images/program_btn_02-1.png');
+    background-image: url('images/svg/crmbtnG.svg');
   }
 
   .tab2.is-active:hover {
-    background-image: url('images/program_btn_02-1.png');
+    background-image: url('images/svg/crmbtnG.svg');
   }
 
   .tab3 {
-    width: 274px;
+    width: 272px;
     height: 66px;
-    background-image: url('images/program_btn_03.png');
+    background-image: url('images/svg/polbtnW.svg');
   }
 
   .tab3:hover {
-    background-image: url('images/program_btn_03-1.png');
+    background-image: url('images/svg/polbtnR.svg');
   }
 
   .tab3.is-active {
-    background-image: url('images/program_btn_03-1.png');
+    background-image: url('images/svg/polbtnR.svg');
   }
 
   .tab3.is-active:hover {
-    background-image: url('images/program_btn_03-1.png');
+    background-image: url('images/svg/polbtnR.svg');
   }
 
   #program_contents {
@@ -89,6 +90,7 @@
     /* box-shadow: 2px 2px 2px #34b8e5; */
     border-radius: 5px;
     background-color: #fff;
+
   }
 
   .solve hr {
@@ -128,6 +130,9 @@
     display: none;
   }
 
+  .mksolve {
+    border: 3px solid transparent;
+  }
 
   .mksolve:hover {
     background-color: #e9f7fd;
@@ -135,11 +140,15 @@
   }
 
   .mksolve:hover .mksolvehr {
-    height: 0px;
+    background-color: transparent;
   }
 
   .mksolvehr {
     background-color:#34b8e5;
+  }
+
+  .crmsolve {
+    border: 3px solid transparent;
   }
 
   .crmsolve:hover {
@@ -148,11 +157,15 @@
   }
 
   .crmsolve:hover .crmsolvehr {
-    height: 0px;
+    background-color: transparent;
   }
 
   .crmsolvehr {
     background-color: #41dabe;
+  }
+
+  .posolve {
+    border: 3px solid transparent;
   }
 
   .posolve:hover {
@@ -161,13 +174,12 @@
   }
 
   .posolve:hover .posolvehr {
-    height: 0px;
+    background-color: transparent;
   }
 
   .posolvehr {
     background-color: #fa327b;
   }
-
 
 </style>
 

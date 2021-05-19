@@ -14,7 +14,11 @@
   <div id="id_wrapper">
     <div id="topbanner">
       <div id="header">
-        <div id="logo"><a href="index.html"><img src="images/logo.png" width="170" height="30" alt="" /></a></div>
+        <div id="logo">
+          <a href="index.html">
+            <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
+          </a>
+        </div>
         <ul>
           <li><a href="technology.html">核心技術</a></li>
           <li><a href="life.html">生活型態</a></li>
@@ -23,6 +27,15 @@
           <li class="white"><a href="program.html">產品與解決方案</a></li>
           <li class="white"><a href="contact.html" style=" border-bottom: #4afdff solid 4px;">聯絡我們</a></li>
         </ul>
+      </div>
+      <div id="bannerText">
+        <p>
+          <span class="bannertext1">i-Buzz獨家</span>
+          <br>
+          <span class="bannertext2">ID分析技術</span>
+          <br>
+          <span class="bannertext3">讓大數據取代傳統市場</span>
+        </p>
       </div>
     </div>
 
@@ -112,13 +125,15 @@
         },
         cache: false,
         success: function (res) {
-          var result = JSON.parse(res);
-          if (result.status) {
-            alert(result.msg);
-            clearUc();
-          } else {
-            alert(result.msg);
-          }
+          alert(res);
+          clearUc();
+          // var result = JSON.parse(res);
+          // if (result.status) {
+          //   alert(result.msg);
+          //   clearUc();
+          // } else {
+          //   alert(result.msg);
+          // }
 
         },
         error: function (xhr, status, error) {

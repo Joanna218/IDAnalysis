@@ -25,8 +25,11 @@
 
 
 
-    $to = "joanna@return.com.tw";
+    // $to = "joanna@return.com.tw";
+    $to ="idanalysis_service@i-buzz.com.tw";
+
     $subject = "iBuzzID客戶資料";
+    $subject = "=?UTF-8?B?".base64_encode($subject )."?=";
 
     $message = "
     聯絡人：$contactPerson <br>

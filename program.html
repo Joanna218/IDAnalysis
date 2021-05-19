@@ -181,13 +181,92 @@
     background-color: #fa327b;
   }
 
+  #product_content {
+    background-color: #f2f6f6;
+  }
+
+  * {
+    /* box-sizing: border-box;
+    border: 1px solid black; */
+  }
+
+  .product_row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 50px 0px;
+  }
+
+  .numodd {
+    color: #fff;
+    font-size: 220px;
+    margin: 0;
+    font-weight: 600;
+    position: absolute;
+    top: -35px;
+    left: -50px;
+  }
+
+  .numeven {
+    color: #fff;
+    font-size: 220px;
+    margin: 0;
+    font-weight: 600;
+    position: absolute;
+    top: -35px;
+    right: -50px;
+  }
+
+  .descodd {
+    margin-top: 70px;
+    text-align: left;
+    z-index: 999;
+    margin-left: 30px;
+    width: 43%;
+  }
+
+  .desceven {
+    margin-top: 70px;
+    text-align: left;
+    z-index: 999;
+    margin-right: -40px;
+    width: 35%;
+  }
+
+  .desctitle {
+    font-size: 36px;
+    color: #073795;
+    letter-spacing: 1px;
+  }
+
+  .descP {
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 18px;
+  }
+
+  .dataLabel {
+    background-image: url("./images/label.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 0px 2px 15px;
+    color: #eee;
+    margin: 10px 0px;
+  }
+
 </style>
 
 <body>
   <div id="id_wrapper">
 
     <div id="header" style="margin-top: 30px; height: 60px;">
-      <div id="logo"><a href="index.html"><img src="images/logo.png" width="170" height="30" alt="" /></a></div>
+      <div id="logo">
+        <a href="index.html">
+          <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
+        </a>
+      </div>
       <ul>
         <li><a href="technology.html">核心技術</a></li>
         <li><a href="life.html">生活型態</a></li>
@@ -235,10 +314,49 @@
       <div id="product_content">
         <h2>產品服務 </h2>
         <hr style="background-color: #4b59c7;margin-top:20px;margin-bottom: 50px; width:20%; height:4px;border:none;">
-        <img src="images/program_01.png" width="1080" height="428" alt="" /><img src="images/program_02.png"
-          width="1080" height="433" alt="" /><img src="images/program_03.png" alt="" width="1080" height="303" />
 
-        <div id="program_menu_idreport">
+        <div class="product_row">
+          <span class="numodd">01</span>
+          <div class="descodd">
+            <h3 class="desctitle">ID標籤資料庫</h3>
+            <p class="descP">最龐大的ID標籤資料庫，擁有數六千種特色標籤，囊括人口特徵、興趣、意見、休閒活動、消費行為、政治立場…定時更新ID狀態，且提供客製化專屬標籤滿足客戶需求。</p>
+
+            <div>
+              <div class="dataLabel">
+                數據包
+              </div>
+
+              <div class="dataLabel">
+                資料API串接
+              </div>
+            </div>
+          </div>
+          <img src="https://fakeimg.pl/510x350" alt="">
+        </div>
+
+        <div class="product_row">
+          <img src="https://fakeimg.pl/510x350" alt="">
+          <span class="numeven">02</span>
+          <div class="desceven">
+            <h3 class="desctitle">ID系統分析</h3>
+            <p class="descP">您想像中的TA與社群真實反應的一致嗎？ <br> 找出你的品牌競爭力 <br>
+              精準描繪品牌TA輪廓並完整追蹤趨勢變化</p>
+          </div>
+        </div>
+
+        <div class="product_row">
+          <span class="numodd">03</span>
+          <div class="descodd" style="display: flex;width: 100%;align-items: center;">
+            <h3 class="desctitle" style="width: 55%;">ID分析報告</h3>
+            <p class="descP">持續追蹤匿名ID的網路活動紀錄，彙整網路群眾的想法，觀察例行性的ID狀態變化與趨勢分析，提供最完整的鄉民數據調查報告，讓品牌獲獲取最有價值的發現與建議。</p>
+          </div>
+        </div>
+
+
+        <!-- <img src="images/program_01.png" width="1080" height="428" alt="" /><img src="images/program_02.png"
+          width="1080" height="433" alt="" /><img src="images/program_03.png" alt="" width="1080" height="303" /> -->
+
+        <div id="program_menu_idreport" style="margin-top: 80px;">
           <!-- 生活型態族群分析報告 -->
           <div class="box">
             <h3>生活型態族群分析報告</h3>

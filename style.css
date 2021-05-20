@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-weight: 300;
+}
+
 .clear {
     clear: both;
 }
@@ -585,7 +589,7 @@ a {
     color: #000;
     clear: both;
     line-height: 28px;
-    font-weight: 500;
+    /* font-weight: 500; */
     width: 450px;
     text-align: center;
     margin: 0 auto;

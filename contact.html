@@ -64,12 +64,13 @@
                 &nbsp;</td>
               <td height="120" align="left" class="black">服務需求<span class="red_s">*</span><br />
                 <select id="selectDemand" name="selectDemand">
-                  <option selected="selected" value="報告產品">報告產品</option>
-                  <option value="數據產品">數據產品</option>
+                  <option selected="selected" value="報告產品">ID分析報告</option>
+                  <option value="數據產品">社群行銷解決方案</option>
+                  <option value="數據產品">政治行銷解決方案</option>
                 </select></td>
             </tr>
             <tr>
-              <td height="60" colspan="2" align="left" valign="middle" class="black">備註說明：<br />
+              <td height="120" colspan="2" align="left" valign="middle" class="black">備註說明：<br />
                 <input name="note" type="text" required id="note" size="80"></td>
             </tr>
             <tr>
@@ -127,14 +128,6 @@
         success: function (res) {
           alert(res);
           clearUc();
-          // var result = JSON.parse(res);
-          // if (result.status) {
-          //   alert(result.msg);
-          //   clearUc();
-          // } else {
-          //   alert(result.msg);
-          // }
-
         },
         error: function (xhr, status, error) {
           console.error(xhr);
@@ -151,7 +144,7 @@
       $("#contactPhone").val("");
       $("#companyOrg").val("");
       $("#email").val("");
-      $("#selectDemand").val("報告產品");
+      $("#selectDemand").val("ID分析報告");
       $("#note").val("");
     }
 

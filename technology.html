@@ -79,6 +79,43 @@
     letter-spacing: 1px;
     line-height: 26px;
   }
+
+  /* 服務流程 */
+  #service_process {
+    padding: 40px 0px;
+  }
+
+  #service_process_box {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .client_box {
+    width: 30%;
+  }
+
+  .client_desc {
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+  }
+
+  .client_desc span {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .client_desc p {
+    line-height: 30px;
+  }
 </style>
 
 <body>
@@ -87,7 +124,7 @@
       <div id="header">
         <div id="logo">
           <a href="index.html">
-            <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
+            <img style="margin-top: -12px;" src="images/logo.svg" width="200" height="50" alt="" />
           </a>
         </div>
         <ul>
@@ -170,10 +207,25 @@
     <div id="technology_report">
       <div id="arrowbg_content"><img src="images/technology_05.png" width="1080" height="50" alt="" /></div>
       <div id="technology_report_content">
-        <h2>專業數據報表平台 </h2>
-        <div class="line_200_2"></div>
-        <h3>鄉民ID運用豐富的標籤組合，產出分析數據報表</h3>
-        <img src="https://fakeimg.pl/1080x736" width="1080" height="736" alt="" />
+        <!-- 服務流程 -->
+        <div id="service_process">
+          <h2 class="text-center">服務流程</h2>
+          <div class="line_200_2"></div>
+          <div id="service_process_box">
+            <div class="client_box">
+              <img src="./images/svg/client.svg" width="141" height="138" alt="">
+              <img src="https://fakeimg.pl/60x60" alt="">
+            </div>
+            <div class="client_desc">
+              <span>客戶需求: </span>
+              <p>按摩椅廠商想了解消費者對於按摩服務的需求、客群樣貌與生活型態。協助制定產品研發與行銷策略的決策方向。</p>
+            </div>
+          </div>
+
+          <div class="process_img text-center">
+            <img src="https://fakeimg.pl/1000x600" alt="">
+          </div>
+        </div>
       </div>
     </div>
 

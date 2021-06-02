@@ -308,8 +308,8 @@
   }
 
   .gearmk {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
   }
 
   .gearPText {
@@ -341,8 +341,10 @@
     color: #fff;
     font-weight: bold;
     position: relative;
-    top: -88px;
-    left: 11px;
+    top: -112px;
+    left: 26px;
+    width: 100px;
+    display: block;
   }
 
   h4 > a ,p > a{
@@ -451,20 +453,22 @@
 
   #solveText1 {
     position: absolute;
-    left: 170px;
+    /* left: 170px; */
     top: 180px;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.8rem;
+    text-align: right;
   }
 
   #solveText2 {
     position: absolute;
-    left: 385px;
+    left: 310px;
     top: 100px;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.8rem;
+    text-align: center;
   }
 
   #solveText3 {
@@ -474,6 +478,8 @@
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.8rem;
+    width: 462px;
+    text-align: left;
   }
 
 </style>
@@ -484,7 +490,7 @@
       <div id="header">
         <div id="logo">
           <a href="index.html">
-            <img style="margin-top: -12px;" src="images/logo.svg" width="170" height="50" alt="" />
+            <img style="margin-top: -12px;" src="images/logo.svg" width="200" height="50" alt="" />
           </a>
         </div>
         <ul>
@@ -588,12 +594,9 @@
                 <h4>
                   <a href="./program.html">產品服務</a>
                 </h4>
-                <p>
-                  ID標籤資料庫
-                  <br>
-                  ID分析系統
-                  <br>
-                  ID分析報告
+                <p style="display: flex;justify-content: center;align-items: center;height: 66px;flex-direction: column;">
+                  <a href="./product_solve.html">ID標籤資料庫</a>
+                  <a href="./product_solve.html">ID分析報告</a>
                 </p>
               </div>
             </div>
@@ -605,11 +608,11 @@
                   <a href="./program.html">解決方案</a>
                 </h4>
                 <p>
-                  洞悉消費者生活型態
+                  <a href="./product_solve_expert.html">ID輪廓描繪服務</a>
                   <br>
-                  動態式追蹤消費行為
+                  <a href="./product_solve_expert.html">社群溝通策略</a>
                   <br>
-                  標籤掌握社群ID政治傾向
+                  <a href="./product_solve_expert.html">政治行銷</a>
                 </p>
               </div>
             </div>
@@ -815,21 +818,24 @@
         <hr style="background-color: #4b59c7;margin-bottom: 50px; width:20%; height:4px;border:none;">
 
         <!-- 社群行銷 -->
-        <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText1">協助您瞭解媒體風向
-            <br>
-            掌握社群民意
+        <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText1">
+          自行設定潛在消費者、直接或間接的消費需求關鍵字
+          <br>
+          協助客戶​挖掘意想不到的消費者insight!
         </p>
 
         <!-- 顧客關係 -->
-        <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText2"> 運用系統化管理具像化鄉民的消費行為
+        <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText2">
+          瞭解你的客群樣貌，探索更多元的消費認知、態度與行為
           <br>
-          讓品牌挖掘更全面的消費者輪廓
+          提供專業的口碑行銷服務，為您擬定最高效率的溝通策略
         </p>
 
          <!-- 政治行銷 -->
-         <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText3">觀察消費者市場的需求轉變
+         <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500" id="solveText3">
+            針對網路上的社群媒體政治進行民意調查
             <br>
-            提供品牌長遠而縝密的行銷策略規劃
+            運用ID政治標籤， 觀察不同政治立場民眾的情緒與意見
         </p>
         <div class="solveImg">
           <div id="gearBoxp">
@@ -839,12 +845,12 @@
 
           <div id="gearBoxcrm">
             <div class="gear gearcrm"></div>
-            <span class="gearcrmText">顧客關係 <br> 管理</span>
+            <span class="gearcrmText">社群溝通 <br> 策略</span>
           </div>
 
           <div id="gearBoxmk">
             <div class="gear gearmk"></div>
-            <span class="gearmkText">社群 <br> 行銷</span>
+            <span class="gearmkText">ID輪廓 <br> 描繪服務</span>
           </div>
         </div>
         </div>

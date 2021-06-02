@@ -13,12 +13,23 @@
 
 <style>
 
+button:focus {
+  outline:0;
+}
+
   /* boostrap */
   .nav-link {
     width: 49%;
     height: 60px;
     border-radius: 8px 8px 0px 0px;
     font-size: 22px;
+    background-color: #f1f1f1;
+    color: #7b7b7b;
+  }
+
+  .nav-link.active {
+    background-color: #fff;
+    color: #000;
   }
 
   h2{
@@ -37,8 +48,12 @@
 
   #bgc {
       width: 100%;
-      height: 100px;
+      height: 75px;
       background-color: #0e3b87;
+  }
+
+  .nav {
+    margin-top: -60px;
   }
 
 
@@ -133,6 +148,7 @@
     border-radius: 8px;
     background-color: #fff;
     border: #dfdfdf 1px solid;
+    height: 545px;
   }
 
   .content_box h2 {
@@ -141,6 +157,7 @@
 
   .content_box p {
     padding: 20px 0px;
+    padding-top: 0px;
     text-align: left;
   }
 
@@ -366,7 +383,7 @@
         <li><a href="life.html">生活型態</a></li>
         <li><a href="market.html">市場研究</a></li>
         <li><a href="political.html">政治民意</a></li>
-        <li><a href="program.html" style=" border-bottom: #4b59c7 solid 4px;">產品與解決方案</a></li>
+        <li><a href="product_solve.html" style=" border-bottom: #4b59c7 solid 4px;">產品與解決方案</a></li>
         <li><a href="contact.html">聯絡我們</a></li>
       </ul>
     </div>
@@ -380,13 +397,19 @@
 
     </div>
 
+    <div id="bgc"></div>
+
     <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ID標籤資料庫
+      <div class="nav nav-tabs justify-content-around" id="nav-tab" role="tablist">
+        <button class="nav-link active tab1" id="nav-home-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          <img src="./images/svg/IDlabel_icon_01.svg" alt="">
+          ID標籤資料庫
       </button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">專家分析報告
+        <button class="nav-link tab2" id="nav-profile-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+          <img src="./images/svg/expertlabel_icon_02-1.svg" alt="">
+          專家分析報告
         </button>
 
       </div>
@@ -457,7 +480,7 @@
                 </tr>
               </table>
 
-              <div class="note">
+              <div class="note" style="margin-top: 61px;">
                 <span>適用對象：</span>擁有分析團隊，但缺乏基礎語料之應用單位。
               </div>
             </div>
@@ -488,7 +511,7 @@
         <!-- 產品特色 -->
         <div id="producrt_feature">
           <div id="product_feature_box">
-            <h2 class="text-center">產品特色</h2>
+            <h2 class="text-center" style="font-size: 46px;">產品特色</h2>
             <div class="line_200_2 "></div>
             <div id="feature_img">
               <div class="feature_item">
@@ -513,7 +536,7 @@
             <div id="index_sec_content">
               <h2>聯絡我們</h2>
               <div class="line_200_2"></div>
-              <div id="contact">
+              <div id="contact" style="margin-top: 50px;">
                 <table width="760" align="center" cellpadding="0" cellspacing="0" class="contact_table">
                   <tr>
                     <td width="392" height="120" align="left" class="black">聯絡人<span class="red_s">*</span><br />
@@ -790,6 +813,21 @@
 
 <script>
   $(function () {
+
+    // ID標籤資料庫、專家分析報告的頁籤
+    $('.tab1').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.tab1 img').attr('src', '/images/svg/IDlabel_icon_01.svg');
+        $('.tab2 img').attr('src', './images/svg/expertlabel_icon_02-1.svg');
+      }
+    });
+
+    $('.tab2').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.tab2 img').attr('src', './images/svg/expertlabel_icon_02.svg');
+        $('.tab1 img').attr('src', '/images/svg/IDlabel_icon_01-1.svg');
+      }
+    });
 
     // 聯絡我們
     $("#submit").click(function (e) {

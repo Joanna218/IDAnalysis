@@ -3,8 +3,58 @@
   // border: 1px solid;
 }
 
-/* banner */
+html,body {
+  min-width: 1300px;
+  overflow-x: hidden;
+}
 
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+
+.navbar-nav a {
+  border-bottom: transparent solid 4px;
+
+  &:hover {
+    color: #000;
+    border-bottom: #4b59c7 solid 4px;
+  }
+}
+
+$basic_font_size: 1rem;
+$banner-main-text: #4b59c7;
+$banner-sub-text: #404040;;
+$bg-gray: #f5f5f5;
+
+h1 {
+  font-size: $basic_font_size*4;
+}
+
+h2 {
+  font-size: $basic_font_size*3;
+}
+
+// 每一個標題的底線
+.title-undderline {
+  height: 4px;
+  background-color: $banner-main-text;
+  width: 200px;
+  border: none;
+  margin: 10px auto;
+}
+
+.container-pd {
+  padding: 0px 60px;
+}
+
+
+/* banner */
 #bg-banner {
   background: url('../images/common/banner-img.svg');
   width: 100%;
@@ -14,34 +64,669 @@
   margin: 0 auto;
   background-size: contain;
   padding-top: 20px;
-  min-width: 1168px
+  min-width: 1168px;
+  background-position-x: 25px;
 }
 
 .logo-img {
   width: 100%;
 }
 
-/* 複寫 bs */
+/* banner 的文字 */
+#bannerText {
+  padding-top: 95px;
+  padding-left: 100px;
+  .banner-commom-text {
+    color: $banner-main-text;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 10px;
+  }
 
+  .bannertext1 {
+    font-size: $basic_font_size*2.5;
+    font-weight: 500;
+  }
+
+  .bannertext2 {
+    font-size: $basic_font_size*5;
+    line-height: 6.5rem;
+  }
+  .bannertext3 {
+    font-size: $basic_font_size*3;
+    color: $banner-sub-text;
+  }
+}
+
+/* 鄉民研究所 */
+#idresearch-bg {
+  background-color: $bg-gray;
+  padding: $basic_font_size*3.5 0px;
+
+  #idImg {
+    background: url('../images/index/idImg.svg');
+    height: 352px;
+    margin-right: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #idDesc {
+    width: 50%;
+
+    .idtitle-undderline {
+      border-bottom: 4px solid $banner-main-text;
+      font-size: 46px;
+      font-weight: 700;
+      padding-bottom: 7px;
+    }
+
+    .tooltip_c {
+      position: relative;
+      border-bottom: 1px dotted black;
+      width: 30px;
+      height: 30px;
+      border: 1px solid;
+      background-color: #595959;
+      color: rgba(255, 255, 255, 0.911);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 25px;
+
+      .tooltiptext {
+        visibility: hidden;
+        width: 170px;
+        background-color: #595959;
+        color: rgba(255, 255, 255, 0.911);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        font-size: 14px;
+        left: 50px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      &:hover .tooltiptext {
+        visibility: visible;
+      }
+    }
+
+    p {
+      line-height: $basic_font_size*2;
+      font-size: 18px;
+      margin: $basic_font_size*2 0px;
+      width: 90%;
+    }
+  }
+
+  #itemDesc {
+    margin: 30px 0px;
+
+    .itembox {
+      padding: 20px 0px;
+      div {
+        border-right: 0.1rem solid rgba(14, 13, 13, 0.247);
+      }
+
+      h4 {
+        margin: 20px 0px;
+      }
+
+      &:hover {
+        background-color: #fff;
+        transition: 0.3s linear;
+        box-shadow: 2px 2px 1px 1px #ddd;
+        border-right: none;
+      }
+
+      &:hover div {
+        border-right: none;
+      }
+
+    }
+
+    .last-itembox {
+      div {
+        border-right: none;
+      }
+    }
+
+    .two-line-p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 72px;
+      flex-direction: column;
+    }
+  }
+
+  #whiteBanner {
+    background-image: url('../images/index/whiteBanner.svg');
+    height: 274px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    #boyDesc1 {
+      margin: 0px 30px;
+      #boyhead {
+        background-image: url('../images/index/boy.svg');
+        width: 120px;
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .boylabel {
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-right: 8px;
+      font-size: $basic_font_size*0.9;
+    }
+
+    .label1 {
+      color: rgb(255,255,255);
+      background-color: rgba(237,125,49)
+    }
+
+    .label1:hover {
+      background-color: rgba(237,125,49,0.75)
+    }
+
+    .label2 {
+      color: rgb(255,255,255);
+      background-color: rgba(112,173,71)
+    }
+
+    .label2:hover {
+      background-color: rgba(112,173,71,0.75)
+    }
+
+    .label3 {
+      color: rgb(255,255,255);
+      background-color: rgba(91,155,213)
+    }
+
+    .label3:hover {
+      background-color: rgba(91,155,213,0.75)
+    }
+
+    .label4 {
+      color: rgb(255,255,255);
+      background-color: rgba(68,114,196)
+    }
+
+    .label4:hover {
+      background-color: rgba(68,114,196,0.75)
+    }
+
+    .label5 {
+      color: rgb(255,255,255);
+      background-color: rgba(112,48,160)
+    }
+
+    .label5:hover {
+      background-color: rgba(112,48,160,0.75)
+    }
+
+    .label6 {
+      color: rgb(255,255,255);
+      background-color: rgba(165,165,165)
+    }
+
+    .label6:hover {
+      background-color: rgba(165,165,165,0.75)
+    }
+
+
+  }
+}
+
+/* 六大類 */
+
+#six-type {
+  padding: $basic_font_size*3.5 0px;
+
+  #world-bg{
+    height: 500px;
+    background-image: url('../images/index/world.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+
+    #circle-bg {
+      background-image: url('../images/index/circle.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 299px;
+      height: 306px;
+
+      #circle-contents {
+        position:relative;
+        font-size: 36px;
+        line-height: 42px;
+
+        .itemcircle {
+          position: absolute;
+          transition: all .2s ease-in-out;
+        }
+
+        .circle1 {
+          top: -108px;
+          left: 86px;
+          &:hover {
+            transform: scale(1.2);
+            top: -118px;
+          }
+        }
+
+        .circle2 {
+          top: -2px;
+          left: 244px;
+          &:hover {
+            transform: scale(1.2);
+            top: -4px;
+            left: 251px;
+          }
+        }
+
+        .circle3 {
+          top: 186px;
+          left: 248px;
+          &:hover {
+            transform: scale(1.2);
+            top: 190px;
+            left: 256px;
+          }
+        }
+
+        .circle4 {
+          top: 277px;
+          left: 77px;
+          &:hover {
+            transform: scale(1.2);
+            top: 285px;
+            left: 75px;
+          }
+        }
+
+        .circle5 {
+          top: 185px;
+          left: -83px;
+          &:hover {
+            transform: scale(1.2);
+            top: 188px;
+            left: -91px;
+          }
+        }
+
+        .circle6 {
+          top: 2px;
+          left: -84px;
+          &:hover {
+            transform: scale(1.2);
+            top: -2px;
+            left: -93px;
+          }
+        }
+      }
+    }
+  }
+
+  #unitech-bg {
+    background-image: url('../images/index/unitech.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    max-width: 1300px;
+    margin-top: $basic_font_size*3;
+
+    .content-box {
+      position: absolute;
+    }
+
+    .type1 {
+      width: 300px;
+      left: 200px;
+      span {
+        font-size: 26px;
+        color: #0075a9;
+      }
+    }
+
+    .type2 {
+      width: 300px;
+      left: 1020px;
+      span {
+        font-size: 26px;
+        color: #14a0c1;
+      }
+    }
+
+    .type3 {
+      width: 300px;
+      left: 990px;
+      top: 250px;
+      span {
+        font-size: 26px;
+        color: #00cd99;
+      }
+    }
+
+    .line-group {
+      position: relative;
+    }
+  }
+}
+
+/* 分析應用 */
+#application-bg {
+  background-image: url('../images/index/four_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding-top: $basic_font_size*3.5;
+
+  h4 {
+    margin: 50px 20px;
+  }
+
+  #application-box {
+    height: 300px;
+    max-width: 1300px;
+
+    #circleZoom1, #circleZoom2, #circleZoom3 {
+      transition: all .2s ease-in-out;
+    }
+
+    #circleZoom1:hover {
+      transform: scale(1.2);
+    }
+
+    #circleZoom2:hover {
+      transform: scale(1.2);
+    }
+
+    #circleZoom3:hover {
+      transform: scale(1.2);
+    }
+
+    .sub-img {
+      margin-left: 20px;
+    }
+  }
+
+}
+
+#five-features {
+  background-image: url('../images/index/five_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+  #five-features-contents {
+    max-width: 1300px;
+
+    .fiveAdText {
+      font-size: 18px;
+      line-height: 30px;
+      color: rgb(255,255,255);
+      margin-top: 10px;
+    }
+  }
+
+  #win {
+    background-image: url('../images/index/WIN.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    margin-top: -39px;
+    margin-left: 800px;
+  }
+
+  @media (max-width: 576px) {
+    #win {
+      width:400px;
+      margin-top: -80px;
+      margin-left: 880px;
+    }
+  }
+
+  .fa-star {
+    color: #ffea00;
+    opacity: 0.4;
+  }
+
+  .fa-star.check {
+    opacity: 1;
+    margin-left: -35px;
+  }
+
+  [data-aos=scaleAnimate].aos-animate {
+    animation: stretch-bounce .5s ease-in-out;
+  }
+
+  [data-aos=checkAnimate].aos-animate {
+    animation: stretch-bounce .5s ease-in-out;
+    opacity: 1;
+  }
+
+  @keyframes stretch-bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+}
+
+/* 解決方案*/
+#solution {
+  padding-top: $basic_font_size*3.5;
+  #solution-bg {
+    background-image: url('../images/index/solveImg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    max-width: 1300px;
+    position: relative;
+    margin-top: 150px;
+
+    .gear-box {
+      position: absolute;
+
+      div {
+        position: relative;
+      }
+    }
+
+    // 齒輪
+    .gear {
+      background-image: url('../images/index/gears.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .gear.is-active {
+      animation: rotating 2s linear infinite;
+    }
+
+    @keyframes rotating {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    // ID輪廓描繪服務的齒輪
+    .gearID-box {
+      top: 100px;
+      left: 360px;
+    }
+
+    .gearID {
+      width: 150px;
+      height: 150px;
+    }
+
+    // 社群溝通策略的齒輪
+    .gearSocial-box {
+      top: -30px;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .gearSocial {
+      width: 170px;
+      height: 170px;
+    }
+
+    // 政治行銷的齒輪
+    .gearPolitical-box {
+      top: 100px;
+      left: 798px;
+    }
+
+    .gearPolitical {
+      width: 120px;
+      height: 120px;
+    }
+
+    // 齒輪的文字
+    .gear-text {
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      color: #fff;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+    }
+
+    // 齒輪上方的描述
+    .gearDesc {
+      position: absolute;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 1.8rem;
+    }
+
+    // ID輪廓描繪服務的描述
+    .gearIDDesc {
+      left: 30px;
+      top: 0px;
+      text-align: right;
+    }
+
+    // 社群溝通策略的描述
+    .gearSocialDesc {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -100px;
+      text-align: center;
+    }
+
+    // 政治行銷的描述
+    .gearPoliticalDesc {
+      left: 830px;
+      top: 20px;
+      text-align: left;
+    }
+  }
+}
+
+ /* footer */
+ #footer {
+  background-color: #282828;
+  height: 210px;
+}
+
+#footer_content {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.footerbox {
+  width: 540px;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.footerbox a {
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footerbox h2 {
+  line-height: 60px;
+  font-size: 18px;
+  color: #cacaca;
+  font-weight: 700;
+}
+
+#footer2 {
+  width: 100%;
+  background-color: #000;
+  height: 50px;
+  font-size: 13px;
+  text-align: center;
+  color: #cacaca;
+  line-height: 46px;
+}
+
+/* 複寫 bs */
 .navbar-nav {
-  margin-right: 80px;
+  margin-right: 60px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
 }
 
 .nav-link {
   color: #000;
   font-size: 18px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .nav-item {
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
-@media (max-width: 1280px) {
-  .nav-item {
-    margin-left: 0.5rem;
-  }
-
-  .nav-link  {
-    font-size: 16px;
-  }
-}

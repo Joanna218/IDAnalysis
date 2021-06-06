@@ -863,6 +863,14 @@ h2 {
   background-position: bottom;
 }
 
+#political-bg {
+  background: url('../images/political/political_banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: bottom;
+}
+
 .banner2-content-box {
   max-width: 1300px;
   margin: 0 auto;
@@ -889,6 +897,13 @@ h2 {
   padding-top: $basic_font_size*3.5;
   .container {
     max-width: 1300px;
+    .chart-title-h4 {
+      font-size: 18px;
+      color: #333333;
+      line-height: 28px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
     .chart-sub-title {
       font-size: 16px;
       color: #a5a5a5;

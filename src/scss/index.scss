@@ -855,6 +855,14 @@ h2 {
   background-position: bottom;
 }
 
+#market-bg{
+  background: url('../images/market/market_banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: bottom;
+}
+
 .banner2-content-box {
   max-width: 1300px;
   margin: 0 auto;
@@ -887,7 +895,7 @@ h2 {
       width: 100%;
       clear: both;
       line-height: 40px;
-      font-weight: 300;
+      font-weight: 500;
       margin-bottom: 20px;
     }
   }

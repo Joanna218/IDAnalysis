@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;900&display=swap');
+
 * {
   box-sizing: border-box;
   // border: 1px solid;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 html,body {
@@ -47,10 +51,6 @@ h2 {
   width: 200px;
   border: none;
   margin: 10px auto;
-}
-
-.container-pd {
-  padding: 0px 60px;
 }
 
 
@@ -117,7 +117,6 @@ h2 {
     .idtitle-undderline {
       border-bottom: 4px solid $banner-main-text;
       font-size: 46px;
-      font-weight: 700;
       padding-bottom: 7px;
     }
 
@@ -722,11 +721,14 @@ h2 {
 .nav-link {
   color: #000;
   font-size: 18px;
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 .nav-item {
   margin-left: .5rem;
 }
 
+.navbar-expand .navbar-nav .nav-link {
+  margin: 0px .5rem;
+  padding-right: 0px;
+  padding-left: 0px;
+}

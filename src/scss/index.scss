@@ -21,12 +21,17 @@ a {
 }
 
 
-.navbar-nav a {
-  border-bottom: transparent solid 4px;
-
+.nav-item a {
   &:hover {
     color: #000;
     border-bottom: #4b59c7 solid 4px;
+  }
+}
+
+.nav-item.nav-item2 a {
+  &:hover {
+    color: #000;
+    border-bottom: #4afdff solid 4px;
   }
 }
 
@@ -1335,4 +1340,5 @@ a.sendbtn:hover {
   margin: 0px .5rem;
   padding-right: 0px;
   padding-left: 0px;
+  height: 47px;
 }

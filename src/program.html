@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- banner -->
+  <div id="bg-banner2">
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid">
+        <a class="navbar-brand col col-sm-2" href="index.html">
+          <img class="logo-img" src="./images/common/logo.svg" alt="">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tech.html">核心技術</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="life.html">生活型態</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market.html">市場研究</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="political.html">政治民意</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">產品與解決方案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="program-bg" class="container-fluid">
+    <div class="row banner2-content-box">
+      <div class="banner2-contents d-flex flex-column justify-content-center">
+        <h2 class="text-white">解決方案</h2>
+        <h3 class="text-white mt-4">以語料探索與機器自動化學習為基礎的鄉民大數據，為您點亮行銷新契機。</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="blue-bg"></div>
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center">
+      <nav id="program-nav">
+        <div class="nav nav-tabs justify-content-around" id="nav-tab" role="tablist">
+          <button class="nav-link active tab1" id="nav-home-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+            <img src="./images/program//IDlabel_icon_01.svg" alt="">
+            ID標籤資料庫
+        </button>
+          <button class="nav-link tab2" id="nav-profile-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+            <img src="./images/program/expertlabel_icon_02-1.svg" alt="">
+            專家分析報告
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center">
+      <!-- tab-contents -->
+      <div class="tab-content" id="nav-tabContent">
+        <!-- ID標籤資料庫 -->
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <!-- ID標籤資料庫內容 -->
+          <div class="d-flex justify-content-center align-items-center mt-4" id="ID_label" style="max-width: 1300px; margin: 0 auto;">
+            <div class="col-5 offset-1 offset-sm-1 col-sm-5 desc">
+              <h3 class="desc_title">6大類標籤資料庫，定時更新網民輪廓</h3>
+              <p class="desc_contents">
+                <span class="desc_contents_title">我們定義六大類貼標類型:</span> <br>
+
+                  <span class="public_feature">人口特徵、興趣、意見、休閒活動、消費行為、政治立場</span>
+                  ，超過千種標籤內容，且定時更新、去除誤判結果與排除問題帳號，提供可信度高的ID樣貌分析服務。
+              </p>
+            </div>
+            <div class="col-5 offset-1 offset-sm-1 col-sm-5 desc_img">
+              <img src="./images/svg/IDLabel_img.svg" alt="">
+            </div>
+          </div>
+
+          <!-- 產品內容 -->
+          <div id="product" class="row d-flex justify-content-center align-items-center">
+            <div style="max-width: 1300px;">
+              <div id="product_title">
+                <h2 class="text-center">產品內容</h2>
+                <div class="title-undderline"></div>
+              </div>
+              <div id="product_contetns" class="row d-flex justify-content-even align-items-center">
+                <!-- ID話題資料 -->
+                <div class="content_box">
+                  <h2>ID話題資料</h2>
+                  <div style="height: 380px; width:80%;margin:0 auto;">
+                    <p>我們提供6大類標籤族群或客製化標籤族群的話題列表，包含ID名稱、發文內容、回文內容、頻道、發文時間等欄位。</p>
+                    <table>
+                      <tr class="bgc_gray">
+                        <th>作者</th>
+                        <th>頻道</th>
+                        <th>標籤</th>
+                        <th>標題</th>
+                        <th>內容</th>
+                        <th>日期/時間</th>
+                      </tr>
+                      <tr>
+                        <td>0123*</td>
+                        <td>FashionGuid </td>
+                        <td>美容</td>
+                        <td>乾敏肌友善...</td>
+                        <td>敏感肌推理膚...</td>
+                        <td>2019/07/12</td>
+                      </tr>
+                      <tr class="bgc_gray">
+                        <td>A11on524</td>
+                        <td>PTTJapan_Tr</td>
+                        <td>旅遊</td>
+                        <td>[問題] 大阪四...</td>
+                        <td>宿打算訂... </td>
+                        <td>2019/07/01</td>
+                      </tr>
+                      <tr>
+                        <td>hotyui</td>
+                        <td>Mobile01W...</td>
+                        <td>流行時尚</td>
+                        <td>吃的保養品...</td>
+                        <td>維他命C最多...</td>
+                        <td>2020/01/14</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div class="note">
+                    <span>適用對象：</span>擁有分析團隊，但缺乏基礎語料之應用單位。
+                  </div>
+                </div>
+                <!-- API服務 -->
+                <div class="content_box">
+                  <h2>API服務</h2>
+                  <div style="height: 380px; width:80%;margin:0 auto;">
+                    <div class="apiService_box">
+                      <h5>1. 標籤分析API</h5>
+                      <p>人口特徵、興趣、意見、休閒活動、消費行為、政治立場辨識的API服務。</p>
+                    </div>
+                    <div class="apiService_box apitheeme">
+                      <div style="margin-top: 20px;">
+                        <h5>2. ID話題API</h5>
+                        <p>六大類標籤的 ID話題列表。</p>
+                      </div>
+                      <div style="width: 70%;">
+                        <img src="./images/svg/APservice_img.svg" alt="" srcset="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <span>適用對象：</span>缺乏分析團隊與基礎資料之應用單位。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 產品特色 -->
+          <div id="producrt_feature">
+            <div id="product_feature_box">
+              <h2 class="text-center" style="font-size: 46px;">產品特色</h2>
+              <div class="title-undderline"></div>
+              <div id="feature_img">
+                <div class="feature_item">
+                  <img src="./images/svg/feature_item_01.svg" alt="">
+                  <h4 style="text-align: center;">定期更新ID狀態</h4>
+                </div>
+                <div class="feature_item">
+                  <img src="./images/svg/feature_item_02.svg" alt="">
+                  <h4 style="text-align: center;">定期排除問題帳號</h4>
+                </div>
+                <div class="feature_item">
+                  <img src="./images/svg/feature_item_03.svg" alt="">
+                  <h4 style="text-align: center;">定期排除誤判結果</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 聯絡我們 -->
+          <div id="contact_us">
+            <div id="index_sec">
+              <div id="index_sec_content">
+                <h2 class="text-center">聯絡我們</h2>
+                <div class="title-undderline"></div>
+                <div id="contact" style="margin-top: 50px;">
+                  <table width="760" align="center" cellpadding="0" cellspacing="0" class="contact_table">
+                    <tr>
+                      <td width="392" height="120" align="left" class="black">聯絡人<span class="red_s">*</span><br />
+                        <input name="contactPerson" type="text" required id="contactPerson" size="32"></td>
+                      <td width="406" height="120" align="left" class="black">職稱<span class="red_s">*</span><br />
+                        <input name="department" type="text" required id="department" size="32"></td>
+                    </tr>
+                    <tr>
+                      <td height="120" align="left" class="black">聯絡電話 <span class="red_s">*</span><br />
+                        <input name="contactPhone" type="text" required id="contactPhone" size="32"></td>
+                      <td height="120" align="left" class="black">公司/組織單位<span class="red_s">*</span><br />
+                        <input name="companyOrg" type="text" required id="companyOrg" size="32"></td>
+                    </tr>
+                    <tr>
+                      <td height="120" align="left" class="black">E-mail<span class="red_s">*</span><br />
+                        <input name="email" type="text" required id="email" size="32">
+                        &nbsp;</td>
+                      <td height="120" align="left" class="black">服務需求<span class="red_s">*</span><br />
+                        <select id="selectDemand" name="selectDemand">
+                          <option selected="selected" value="報告產品">ID分析報告</option>
+                          <option value="數據產品">社群行銷解決方案</option>
+                          <option value="數據產品">政治行銷解決方案</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td height="120" colspan="2" align="left" valign="middle" class="black">備註說明：<br />
+                        <input name="note" type="text" required id="note" size="80"></td>
+                    </tr>
+                    <tr>
+                      <td height="0" align="left" valign="bottom">&nbsp;</td>
+                      <td height="0" align="right" valign="middle">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td height="66" colspan="2" align="left" valign="top">
+                        <a style="margin-top: 30px;" href="#" id="submit" class="sendbtn" disabled="disabled">確認送出 </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+    <div id="footer" class="container-fluid">
+      <div id="footer_content">
+        <div class="footerbox">
+          <h2>其他產品與服務</h2>
+          <a href="https://www.i-buzz.com.tw/" target="_blank">i-Buzz口碑網路研究中心</a>
+          <a href="https://www.i-buzz.com.tw/" target="_blank">https://www.i-buzz.com.tw</a>
+          <a href="https://i-buzz.herokuapp.com/VOCplus" target="_blank">i-Buzz VOC+ 產業口碑數據庫</a>
+          <a href="https://i-buzz.herokuapp.com/VOCplus" target="_blank">https://i-buzz.herokuapp.com/VOCplus</a>
+        </div>
+        <div class="footerbox">
+          <h2>與我們聯絡</h2>
+          <a href="mailto:idanalysis_service@i-buzz.com.tw">客服信箱</a>
+          <a href="mailto:idanalysis_service@i-buzz.com.tw">idanalysis_service@i-buzz.com.tw</a>
+        </div>
+      </div>
+    </div>
+    <div id="footer2" class="container-fluid">© 2021 亞洲指標數位行銷顧問股份有限公司. 版權所有</div>
+
+</body>
+
+<!-- <script src="./js/vender.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js' integrity='sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA==' crossorigin='anonymous'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' integrity='sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==' crossorigin='anonymous'></script>
+
+<script>
+  $(function () {
+
+    // ID標籤資料庫、專家分析報告的頁籤
+    $('.tab1').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.tab1 img').attr('src', '/images/svg/IDlabel_icon_01.svg');
+        $('.tab2 img').attr('src', './images/svg/expertlabel_icon_02-1.svg');
+      }
+    });
+
+    $('.tab2').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.tab2 img').attr('src', './images/svg/expertlabel_icon_02.svg');
+        $('.tab1 img').attr('src', '/images/svg/IDlabel_icon_01-1.svg');
+      }
+    });
+
+    // 聯絡我們
+    $("#submit").click(function (e) {
+      event.preventDefault();
+
+      var contactPerson = $("#contactPerson").val();
+      var department = $("#department").val();
+      var contactPhone = $("#contactPhone").val();
+      var companyOrg = $("#companyOrg").val();
+      var email = $("#email").val();
+      var selectDemand = $("#selectDemand").val();
+      var note = $("#note").val();
+
+
+      if (contactPerson == '' || department == '' || contactPhone == '' || companyOrg == ''
+      || email == '' || selectDemand == '') {
+        alert("請輸入必填欄位！");
+        return false;
+      }
+
+      $.ajax({
+        type: "POST",
+        url: "sendMail.php",
+        data: {
+          contactPerson: contactPerson,
+          department: department,
+          contactPhone: contactPhone,
+          companyOrg: companyOrg,
+          email: email,
+          selectDemand: selectDemand,
+          note: note,
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+          clearUc();
+        },
+        error: function (xhr, status, error) {
+          console.error(xhr);
+        }
+      });
+
+    });
+
+
+    // 清除表單控制項
+    function clearUc() {
+      $("#contactPerson").val("");
+      $("#department").val("");
+      $("#contactPhone").val("");
+      $("#companyOrg").val("");
+      $("#email").val("");
+      $("#selectDemand").val("ID分析報告");
+      $("#note").val("");
+    }
+
+
+    //專家的產品內容
+    $('#idreport1Btn').on('click', function () {
+      $('#idreport1').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+    });
+
+    $('#idreport2Btn').on('click', function () {
+      $('#idreport2').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport2Bottom').css('margin-bottom', '153px');
+    });
+
+    $('#idreport3Btn').on('click', function () {
+      $('#idreport3').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport3Bottom').css('margin-bottom', '225px');
+    });
+
+  });
+</script>
+
+</html>

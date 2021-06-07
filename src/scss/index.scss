@@ -75,7 +75,7 @@ h2 {
 /* banner 的文字 */
 #bannerText {
   padding-top: 95px;
-  padding-left: 100px;
+  padding-left: 140px;
   .banner-commom-text {
     color: $banner-main-text;
     letter-spacing: 2px;
@@ -89,11 +89,11 @@ h2 {
   }
 
   .bannertext2 {
-    font-size: $basic_font_size*5;
+    font-size: $basic_font_size*4.5;
     line-height: 6.5rem;
   }
   .bannertext3 {
-    font-size: $basic_font_size*3;
+    font-size: $basic_font_size*2.5;
     color: $banner-sub-text;
   }
 }
@@ -107,6 +107,7 @@ h2 {
     background: url('../images/index/idImg.svg');
     height: 352px;
     margin-right: 50px;
+    margin-left: 70px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -719,6 +720,7 @@ h2 {
     max-width: 1300px;
     .row {
       margin: $basic_font_size*2 0px;
+      padding: 0px 50px;
       .techDesc h1 {
         color: #847fff;
         font-size: 70px;
@@ -878,7 +880,11 @@ h2 {
 }
 
 .banner2-contents {
-  margin-left: 30px;
+  margin-left: 120px;
+  h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
 }
 
 #theme-contents {
@@ -945,7 +951,7 @@ h2 {
   }
 
   .nav {
-    margin-top: -60px;
+    margin-top: -59px;
   }
 
   .nav-link.active {
@@ -963,6 +969,10 @@ h2 {
   font-size: 30px;
   color: #444444;
   line-height: 3rem;
+}
+
+.public_praise {
+  font-size: 40px;
 }
 
 .desc_contents {
@@ -1096,7 +1106,6 @@ h2 {
   font-size: 18px;
   line-height: 26px;
   padding: 5px;
-  font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
   margin-right: 5px;
 }
 
@@ -1121,7 +1130,6 @@ h2 {
   font-size: 18px;
   line-height: 26px;
   padding: 5px;
-  font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
   margin-right: 5px;
   color: #333;
 }
@@ -1153,6 +1161,157 @@ a.sendbtn:hover {
   background-color: #452dfc;
 }
 
+/* 專家產品內容  */
+#expert_product_contents {
+  background-color: #f5f5f5;
+  padding: 40px 0px;
+}
+
+.collapsible {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  color: #bbbbbb;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.showContent {
+  display: none;
+}
+
+#program_menu_idreport {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+#program_menu_idreport .box {
+  width: 349px;
+  float: left;
+  background-image: url('../images/program/idreport_bg-1.png');
+  padding-top: 80px;
+  margin-right: 15px;
+  text-align: left;
+  background-repeat: no-repeat;
+}
+
+#program_menu_idreport .box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 50px;
+  width: 289px;
+  margin: 0 auto;
+}
+
+#program_menu_idreport .box h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b78f8;
+  line-height: 30px;
+  width: 289px;
+  margin: 0 auto;
+}
+
+#program_menu_idreport .box p {
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: 289px;
+  margin: 0 auto 10px auto;
+}
+
+#program_menu_idreport .box a {
+  font-size: 16px;
+  color: #bbbbbb;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.clear {
+  clear: both;
+}
+
+/* 解決方案 */
+
+#solution_way {
+  background-color: #f5f5f5;
+}
+
+#solution_way_container {
+  width: 80%;
+  margin: 0 auto;
+  padding: $basic_font_size*3.5 0px;
+}
+
+#solution_tab {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0px;
+}
+.tab {
+  background-color: #fff;
+  width: 363px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 22px;
+  padding: 22px;
+  box-shadow: #e3e3e3 4px 2px;
+}
+
+.tab img {
+  margin-right: 5px;
+}
+
+#four_box_area .box {
+  width: 500px;
+  height: 555px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+#four_box_area .box.box_dark {
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_dark_p {
+  font-weight: 500;
+  line-height: 2rem;
+  width: 400px;
+  font-size: 18px;
+}
+
+.program_box {
+  padding: 15px 40px;
+}
+
+.program_desc {
+  margin-left: 20px;
+}
+
+.program_desc h4 {
+  font-size: 20px;
+}
+
+.id_blue_label {
+  width: 150px;
+  padding: 10px;
+  margin: 0px 20px;
+  color: #fff;
+  background-color: #4b59c7;
+  text-align: center;
+}
 
 /* 複寫 bs */
 .navbar-nav {
@@ -1160,7 +1319,7 @@ a.sendbtn:hover {
 }
 
 .navbar-brand {
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
 .nav-link {

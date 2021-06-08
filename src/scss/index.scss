@@ -35,6 +35,14 @@ a {
   }
 }
 
+.nav-link.active-menu {
+  border-bottom: #4b59c7 solid 4px;
+}
+
+.nav-link.active-menu2 {
+  border-bottom: #4afdff solid 4px;
+}
+
 $basic_font_size: 1rem;
 $banner-main-text: #4b59c7;
 $banner-sub-text: #404040;;

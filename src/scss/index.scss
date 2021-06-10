@@ -8,7 +8,7 @@
 
 html,body {
   min-width: 1300px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 a {
@@ -49,19 +49,23 @@ $banner-sub-text: #404040;;
 $bg-gray: #f5f5f5;
 
 h1 {
-  font-size: $basic_font_size*4;
+  font-size: $basic_font_size*3;
 }
 
 h2 {
-  font-size: $basic_font_size*3;
+  font-size: $basic_font_size*2.5;
   font-weight: 500;
+}
+
+p {
+  line-height: 26px;
 }
 
 // 每一個標題的底線
 .title-undderline {
   height: 4px;
   background-color: $banner-main-text;
-  width: 200px;
+  width: 160px;
   border: none;
   margin: 10px auto;
 }
@@ -405,6 +409,7 @@ h2 {
     height: 500px;
     max-width: 1300px;
     margin-top: $basic_font_size*3;
+    margin-left: -100px;
 
     .content-box {
       position: absolute;
@@ -652,13 +657,13 @@ h2 {
       font-size: 18px;
       letter-spacing: 1px;
       line-height: 1.8rem;
+      text-align: center;
     }
 
     // ID輪廓描繪服務的描述
     .gearIDDesc {
       left: 30px;
       top: 0px;
-      text-align: right;
     }
 
     // 社群溝通策略的描述
@@ -666,14 +671,12 @@ h2 {
       left: 50%;
       transform: translateX(-50%);
       top: -100px;
-      text-align: center;
     }
 
     // 政治行銷的描述
     .gearPoliticalDesc {
-      left: 830px;
+      left: 777px;
       top: 20px;
-      text-align: left;
     }
   }
 }
@@ -741,7 +744,7 @@ h2 {
       }
 
       .techDesc h2 {
-        font-size: 36px;
+        font-size: 2.5rem;
       }
 
       .techDesc p {
@@ -895,6 +898,7 @@ h2 {
 
 .banner2-contents {
   margin-left: 120px;
+  width: 700px;
   h3 {
     font-size: 20px;
     font-weight: 100;
@@ -910,13 +914,20 @@ h2 {
     line-height: 60px;
     font-weight: 700;
   }
+  p {
+    line-height: 26px;
+  }
 }
 
 #chart {
   background-color: #f5f5f5;
   padding-top: $basic_font_size*3.5;
   .container {
-    max-width: 1300px;
+    // max-width: 1300px;
+    .row {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
     .chart-title-h4 {
       font-size: 18px;
       color: #333333;
@@ -937,7 +948,7 @@ h2 {
 }
 
 
-/* 產品與解決方案 */
+/* 產品與服務 */
 #program-bg {
   background: url('../images/program/product_banner.jpg');
   background-repeat: no-repeat;
@@ -959,7 +970,8 @@ h2 {
     width: 49%;
     height: 60px;
     border-radius: 8px 8px 0px 0px;
-    font-size: 22px;
+    font-size: 34px;
+    font-weight: bold;
     background-color: #f1f1f1;
     color: #7b7b7b;
   }
@@ -980,17 +992,19 @@ h2 {
 }
 
 .desc_title {
-  font-size: 30px;
+  font-size: $basic_font_size*2.5;
   color: #444444;
-  line-height: 3rem;
+  line-height: 3.5rem;
+  font-weight: bold;
 }
 
 .public_praise {
-  font-size: 40px;
+  font-size: $basic_font_size*2.8;
 }
 
 .desc_contents {
   width: 470px;
+  line-height: 26px;
   .desc_contents_title {
     line-height: 2.5rem;
   }
@@ -1028,7 +1042,7 @@ h2 {
   border-radius: 8px;
   background-color: #fff;
   border: #dfdfdf 1px solid;
-  height: 550px;
+  height: 555px;
   width: 540px;
   margin: 0px 15px;
 }
@@ -1072,6 +1086,7 @@ h2 {
 .note {
   width: 80%;
   margin:0 auto;
+  margin-top: 5px;
 }
 
 .note span {
@@ -1091,11 +1106,26 @@ h2 {
   justify-content: space-evenly;;
   align-items: center;
   padding: 50px 0px 40px 0px;
+  .feature_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 40px 0px;
+    }
+    h4 {
+      text-align: center;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+    }
+  }
 }
 
-.feature_item img {
-  margin: 40px 0px;
-}
+
+
 
 /* 聯絡我們 */
 #contact_us {
@@ -1250,7 +1280,7 @@ a.sendbtn:hover {
   clear: both;
 }
 
-/* 解決方案 */
+/* 我們可以幫助你 */
 
 #solution_way {
   background-color: #f5f5f5;
@@ -1287,7 +1317,7 @@ a.sendbtn:hover {
 
 #four_box_area .box {
   width: 500px;
-  height: 555px;
+  height: 590px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -1342,7 +1372,7 @@ a.sendbtn:hover {
 }
 
 .nav-item {
-  margin-left: .5rem;
+  margin-left: 1.5rem;
 }
 
 .navbar-expand .navbar-nav .nav-link {

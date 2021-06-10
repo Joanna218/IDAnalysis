@@ -34,7 +34,7 @@
               <a class="nav-link" href="political.html">政治民意</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active-menu" href="program.html">產品與解決方案</a>
+              <a class="nav-link active-menu" href="program.html">產品與服務</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">聯絡我們</a>
@@ -47,7 +47,7 @@
   <div id="program-bg" class="container-fluid">
     <div class="row banner2-content-box">
       <div class="banner2-contents d-flex flex-column justify-content-center">
-        <h2 class="text-white">解決方案</h2>
+        <h2 class="text-white">產品與服務</h2>
         <h3 class="text-white mt-4">以語料探索與機器自動化學習為基礎的鄉民大數據，為您點亮行銷新契機。</h3>
       </div>
     </div>
@@ -82,7 +82,7 @@
           <!-- ID標籤資料庫內容 -->
           <div class="d-flex justify-content-center align-items-center mt-4 mb-4" id="ID_label" style="max-width: 1300px; margin: 0 auto;">
             <div class="col-5 offset-1 offset-sm-1 col-sm-5 desc">
-              <h3 class="desc_title">6大類標籤資料庫，定時更新網民輪廓</h3>
+              <h3 class="desc_title">6大類標籤資料庫 <br> 定時更新網民輪廓</h3>
               <p class="desc_contents">
                 <span class="desc_contents_title">我們定義六大類貼標類型:</span> <br>
 
@@ -106,7 +106,7 @@
                 <!-- ID話題資料 -->
                 <div class="content_box">
                   <h2>ID話題資料</h2>
-                  <div style="height: 380px; width:80%;margin:0 auto;">
+                  <div style="height: 395px; width:80%;margin:0 auto;">
                     <p>我們提供6大類標籤族群或客製化標籤族群的話題列表，包含ID名稱、發文內容、回文內容、頻道、發文時間等欄位。</p>
                     <table>
                       <tr class="bgc_gray">
@@ -151,7 +151,7 @@
                 <!-- API服務 -->
                 <div class="content_box">
                   <h2>API服務</h2>
-                  <div style="height: 380px; width:80%;margin:0 auto;">
+                  <div style="height: 395px; width:80%;margin:0 auto;">
                     <div class="apiService_box">
                       <h5>1. 標籤分析API</h5>
                       <p>人口特徵、興趣、意見、休閒活動、消費行為、政治立場辨識的API服務。</p>
@@ -160,9 +160,9 @@
                       <div style="margin-top: 20px;">
                         <h5>2. ID話題API</h5>
                         <p>六大類標籤的 ID話題列表。</p>
-                      </div>
-                      <div style="width: 70%;">
-                        <img src="./images/program/APservice_img.svg" alt="" srcset="">
+                        <div>
+                          <img src="./images/program/APservice_img.svg" height="200" alt="" srcset="">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -177,20 +177,35 @@
           <!-- 產品特色 -->
           <div id="producrt_feature">
             <div id="product_feature_box">
-              <h2 class="text-center" style="font-size: 46px;">產品特色</h2>
+              <h2 class="text-center">產品特色</h2>
               <div class="title-undderline"></div>
               <div id="feature_img">
                 <div class="feature_item">
                   <img src="./images/program/feature_item_01.svg" alt="">
-                  <h4 style="text-align: center;">定期更新ID狀態</h4>
+                  <h4>定期更新ID狀態</h4>
+                  <p>
+                    定期分析ID話題 <br>
+                    持續更新標籤內容 <br>
+                    確保標籤的最佳時效性
+                  </p>
                 </div>
                 <div class="feature_item">
                   <img src="./images/program/feature_item_02.svg" alt="">
-                  <h4 style="text-align: center;">定期排除問題帳號</h4>
+                  <h4>定期排除問題帳號</h4>
+                  <p>
+                    問題帳號檢查機制 <br>
+                    有效排除非自然 <br>
+                    與有操作風險的問題帳號
+                  </p>
                 </div>
                 <div class="feature_item">
                   <img src="./images/program/feature_item_03.svg" alt="">
-                  <h4 style="text-align: center;">定期排除誤判結果</h4>
+                  <h4>定期排除誤判結果</h4>
+                  <p>
+                    訓練機器從過往資料中學習 <br>
+                    運用演算法與規則 <br>
+                    推算結果修正誤判數據 <br>
+                  </p>
                 </div>
               </div>
             </div>
@@ -303,6 +318,9 @@
                   CH7 - 族群休閒活動分析<br />
                   CH8 - 觀察總結與後續相關建議
                 </span>
+                <p class="text-end">
+                  <button type="button" id="idreport1Btn_cancel" class="collapsible showContent">(顯示較少)</button>
+                </p>
               </p>
               <img src="./images/program/idreport_bg-2.png" width="349" height="44" alt="" />
             </div>
@@ -331,7 +349,9 @@
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-4 - 行為變項<br />
                   CH3 - 分析總結與建議
                 </span>
-
+                <p class="text-end">
+                  <button type="button" id="idreport2Btn_cancel" class="collapsible showContent">(顯示較少)</button>
+                </p>
               </p>
               <img src="./images/program/idreport_bg-2.png" width="349" height="44" alt="" />
             </div>
@@ -348,12 +368,15 @@
               <p class="idreport3Bottom" style="margin-bottom: 34px;">CH1 - 各標的政黨/政治人物/議題事件簡介 <br />
                 <button type="button" id="idreport3Btn" class="collapsible">(顯示更多…)</button>
                 <span id="idreport3" class="showContent">
-                  CH2 - 各標的政黨/政治人物/議題事件趨<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勢分析<br />
-                  CH3 - 各標的政黨/政治人物/議題事件來<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;源熱門頻道分析<br />
-                  CH4 – 各標的政黨/政治人物/議題事件熱<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;門議題分析<br />
-                  CH5 - 各標的政黨/政治人物/議題事件好<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感度分析<br />
+                  CH2 - 各標的政黨/政治人物/議題事件趨勢分析<br />
+                  CH3 - 各標的政黨/政治人物/議題事件來源熱門頻道分析<br />
+                  CH4 – 各標的政黨/政治人物/議題事件熱門議題分析<br />
+                  CH5 - 各標的政黨/政治人物/議題事件好感度分析<br />
                   CH6 - 觀察總結與後續相關建議
                 </span>
+                <p class="text-end">
+                  <button type="button" id="idreport3Btn_cancel" class="collapsible showContent">(顯示較少)</button>
+                </p>
               </p>
               <img src="./images/program/idreport_bg-2.png" width="349" height="44" alt="" />
             </div>
@@ -389,10 +412,10 @@
 
       </div>
 
-      <!-- 解決方案 -->
+      <!-- 我們可以幫助你 -->
       <div id="solution_way" class="container-fluid">
         <div id="solution_way_container" style="max-width: 1300px;">
-          <h2 class="text-center">解決方案</h2>
+          <h2 class="text-center">我們可以幫助你</h2>
           <div class="title-undderline"></div>
           <div id="solution_tab">
             <div class="tab">
@@ -420,11 +443,11 @@
                 <i class="fas fa-3x fa-arrow-right" style="color: orange;margin: 0px 5px 0px 5px;"></i>
               </div>
               <div class="box">
-                <h3 class="text-center mt-4">ID輪廓描繪服務</h3>
+                <h3 class="text-center mt-4">消費者調研</h3>
                 <div class="d-flex program_box">
                   <img src="./images/program/solve_01.svg" width="100" height="100" alt="">
                   <div class="program_desc">
-                    <h4>客製化定義觀察族群</h4>
+                    <h4>客群探索</h4>
                     <p >
                       自行設定潛在消費者、直接或間接的消費需求關鍵字，協助客戶​挖掘意想不到的消費者Insight!
                     </p>
@@ -433,7 +456,7 @@
                 <div class="d-flex program_box">
                   <img src="./images/program/solve_02.svg" width="100" height="100" alt="">
                   <div class="program_desc">
-                    <h4>族群id的標籤分析</h4>
+                    <h4>客群側寫</h4>
                     <p>
                       透過標籤分析功能，找到消費客群的關聯性興趣、生活型態以及消費偏好。
                     </p>
@@ -442,7 +465,7 @@
                 <div class="d-flex program_box">
                   <img src="./images/program/solve_03.svg" width="100" height="100" alt="">
                   <div class="program_desc">
-                    <h4>族群id的話題分析</h4>
+                    <h4>客群剖析</h4>
                     <p>
                       針對ID發回文進行消費需求、認知、痛點的分析，深度挖掘消費者的意見回饋。強化消費者描繪細節。
                     </p>
@@ -462,7 +485,7 @@
                 <p class="box_dark_p">
                   1. 想嘗試口碑行銷卻不知道該寫什麼內容？ <br>
                   2. 我的潛在客戶是誰？該如何與他們溝通？ <br>
-                  3. 不了解消費者，文案怎麼寫都寫不到通點？ <br>
+                  3. 不了解消費者，文案怎麼寫都寫不到痛點？ <br>
                   4. 溝通素材太單調，口碑行銷成效不彰？
                 </p>
               </div>
@@ -475,7 +498,12 @@
                   透過論壇ID分析，了解你的客群樣貌、挖掘潛在顧客，探索更多元的消費認知、態度與行為。根據分析成果，我們提供最專業的口碑行銷服務，協助客戶瞄準正確的溝通對象，擬定最高效率的溝通策略。
                 </p>
                 <div class="text-center" >
-                  <img src="./images/program/solve_big_img.png" height="350" alt="">
+                  <img src="./images/program/solve_big_img.png" height="310" alt="">
+                </div>
+                <div class="d-flex justify-content-end">
+                 <a href="https://www.i-buzz.com.tw/report/report_online/3.2" target="_blank">
+                   <div class="id_blue_label">了解更多</div>
+                 </a>
                 </div>
               </div>
             </div>
@@ -494,8 +522,8 @@
           <h2>其他產品與服務</h2>
           <a href="https://www.i-buzz.com.tw/" target="_blank">i-Buzz口碑網路研究中心</a>
           <a href="https://www.i-buzz.com.tw/" target="_blank">https://www.i-buzz.com.tw</a>
-          <a href="https://i-buzz.herokuapp.com/VOCplus" target="_blank">i-Buzz VOC+ 產業口碑數據庫</a>
-          <a href="https://i-buzz.herokuapp.com/VOCplus" target="_blank">https://i-buzz.herokuapp.com/VOCplus</a>
+          <a href="http://industryresearch.i-buzz.com.tw/VOCplus" target="_blank">i-Buzz VOC+ 產業口碑數據庫</a>
+          <a href="http://industryresearch.i-buzz.com.tw/VOCplus" target="_blank">http://industryresearch.i-buzz.com.tw/VOCplus</a>
         </div>
         <div class="footerbox">
           <h2>與我們聯絡</h2>
@@ -584,22 +612,48 @@
     }
 
 
-    //專家的產品內容
+    // 顯示較多 - 專家的產品內容
     $('#idreport1Btn').on('click', function () {
+      // 展開內容
       $('#idreport1').toggleClass('showContent').siblings().removeClass('showContent');
+      // 移除顯示更多字樣
       $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      // 加上顯示較少字樣
+      $('#idreport1Btn_cancel').toggleClass('showContent').siblings().removeClass('showContent');
     });
 
     $('#idreport2Btn').on('click', function () {
       $('#idreport2').toggleClass('showContent').siblings().removeClass('showContent');
       $(this).toggleClass('showContent').siblings().removeClass('showContent');
       $('.idreport2Bottom').css('margin-bottom', '153px');
+      // 加上顯示較少字樣
+      $('#idreport2Btn_cancel').toggleClass('showContent').siblings().removeClass('showContent');
     });
 
     $('#idreport3Btn').on('click', function () {
       $('#idreport3').toggleClass('showContent').siblings().removeClass('showContent');
       $(this).toggleClass('showContent').siblings().removeClass('showContent');
       $('.idreport3Bottom').css('margin-bottom', '225px');
+      // 加上顯示較少字樣
+      $('#idreport3Btn_cancel').toggleClass('showContent').siblings().removeClass('showContent');
+    });
+
+    // 顯示較少 - 專家的產品內容
+    $('#idreport1Btn_cancel').on('click', function () {
+      $('#idreport1').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+    });
+
+    $('#idreport2Btn_cancel').on('click', function () {
+      $('#idreport2').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport2Bottom').css('margin-bottom', '11px');
+    });
+
+    $('#idreport3Btn_cancel').on('click', function () {
+      $('#idreport3').toggleClass('showContent').siblings().removeClass('showContent');
+      $(this).toggleClass('showContent').siblings().removeClass('showContent');
+      $('.idreport3Bottom').css('margin-bottom', '34px');
     });
 
   });

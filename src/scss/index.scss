@@ -11,6 +11,10 @@ html,body {
   // overflow-x: hidden;
 }
 
+button:focus {
+  outline:0;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -950,11 +954,12 @@ p {
 
 /* 產品與服務 */
 #program-bg {
-  background: url('../images/program/product_banner.jpg');
+  background: url('../images/program/product_banner.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  background-position: bottom;
+  height: 350px;
+  background-position: center;
+
 }
 
 #blue-bg {

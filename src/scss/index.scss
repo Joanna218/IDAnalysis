@@ -6,10 +6,10 @@
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-html,body {
-  min-width: 1280px;
-  // overflow-x: hidden;
-}
+// html,body {
+//   min-width: 1280px;
+//   overflow-x: hidden;
+// }
 
 button:focus {
   outline:0;
@@ -77,16 +77,59 @@ p {
 
 /* banner */
 #bg-banner {
-  background: url('../images/common/banner-img.svg');
-  width: 100%;
-  height: 554px;
-  background-repeat: no-repeat;
-  max-width: 1280px;
-  margin: 0 auto;
-  background-size: contain;
-  padding-top: 20px;
-  min-width: 1168px;
-  background-position-x: 25px;
+  // background: url('../images/common/banner-img.svg');
+  // width: 100%;
+  // height: 554px;
+  // background-repeat: no-repeat;
+  // max-width: 1280px;
+  // margin: 0 auto;
+  // background-size: contain;
+  // padding-top: 20px;
+  // min-width: 1168px;
+  // background-position-x: 25px;
+  position: relative;
+  .bg-bar {
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #nav-bar {
+    @media (max-width: 991.98px) {
+      // background-color: #fff;
+    }
+
+    .navbar-toggler{
+      color: rgba(0,0,0,.55);
+      border-color: rgba(0,0,0,.1);
+      background-color: #fff;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    .logo {
+      width: 180px;
+      @media (max-width: 991.98px) {
+        width: 170px;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 120px;
+      }
+    }
+
+    .navbar {
+      // 以下
+      // @media (max-width: 991.98px) {
+      //   display: flex;
+      // }
+      // 以上
+      // @media (max-width: 991.98px) {
+      //   display: none;
+      // }
+    }
+  }
 }
 
 .logo-img {
@@ -1364,7 +1407,18 @@ a.sendbtn:hover {
 
 /* 複寫 bs */
 .navbar-nav {
-  margin-right: 60px;
+  margin-right: 90px;
+  @media (max-width: 1399.98px) {
+    margin-right: 60px;
+  }
+
+  @media (max-width: 1199.98px) {
+    margin-right: 8px;
+  }
+
+  // @media (max-width: 991.98px) {
+  //   margin-right: 35px;
+  // }
 }
 
 .navbar-brand {
@@ -1378,11 +1432,36 @@ a.sendbtn:hover {
 
 .nav-item {
   margin-left: 1.5rem;
+  // @include media-breakpoint-down(xxl) {
+  //   margin-left: 0.7rem;
+  // }
+  @media (max-width: 1399.98px) {
+    margin-left: 0.7rem;
+  }
+
+  @media (max-width: 1199.98px) {
+    margin-left: 0.3rem;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-left: 0;
+  }
 }
 
 .navbar-expand .navbar-nav .nav-link {
   margin: 0px .5rem;
   padding-right: 0px;
   padding-left: 0px;
-  height: 47px;
+  // height: 47px;
+  // @include media-breakpoint-down(xxl) {
+  //   font-size: 16px;
+  // }
+  @media (max-width: 1399.98px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1199.98px) {
+    font-size: 14px;
+  }
+
 }

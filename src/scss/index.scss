@@ -609,15 +609,15 @@ p {
       }
     }
 
-    // ID輪廓描繪服務的齒輪
+    // 消費者調研
     .gearID-box {
-      top: 100px;
+      top: 62px;
       left: 360px;
     }
 
     .gearID {
-      width: 150px;
-      height: 150px;
+      width: 165px;
+      height: 165px;
     }
 
     // 社群溝通策略的齒輪
@@ -633,15 +633,15 @@ p {
       height: 170px;
     }
 
-    // 政治行銷的齒輪
+    // 公共議題民意調查
     .gearPolitical-box {
-      top: 100px;
-      left: 798px;
+      top: 79px;
+      left: 776px;
     }
 
     .gearPolitical {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
     }
 
     // 齒輪的文字
@@ -679,8 +679,8 @@ p {
 
     // 政治行銷的描述
     .gearPoliticalDesc {
-      left: 777px;
-      top: 20px;
+      left: 753px;
+      top: 9px;
     }
   }
 }
@@ -773,6 +773,7 @@ p {
 /* 七大特徵 */
 #seven-tags {
   padding: $basic_font_size*3.5 0px;
+  background-color: #002462;
 
   #tag_01 {
     &:hover {
@@ -821,7 +822,7 @@ p {
 
 /* 服務流程 */
 #service {
-  background-color: #002462;
+  // background-color: #002462;
   // TODO 待解決，縮放到pad會有框線出現
   #arrow-white-bg {
     background: url('../images/tech/technology_05.png');
@@ -1322,7 +1323,7 @@ a.sendbtn:hover {
 
 #four_box_area .box {
   width: 500px;
-  height: 590px;
+  height: 550px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -1351,15 +1352,6 @@ a.sendbtn:hover {
 
 .program_desc h4 {
   font-size: 20px;
-}
-
-.id_blue_label {
-  width: 150px;
-  padding: 10px;
-  margin: 0px 20px;
-  color: #fff;
-  background-color: #4b59c7;
-  text-align: center;
 }
 
 /* 複寫 bs */
